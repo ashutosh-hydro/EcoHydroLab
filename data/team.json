@@ -6,8 +6,7 @@
         {
           "name": "Ashutosh Sharma",
           "role": "Associate Professor",
-          "desc": "Department of Hydrology, IIT Roorkee.",
-          "desc": "Joint Faculty, International Centre of Excellence for Dams (ICED)",
+          "desc": "Department of Hydrology & Joint Faculty, International Centre of Excellence for Dams (ICED), IIT Roorkee.",
           "photo": "Ashutosh Sharma.JPG",
           "links": [
             { "label": "Google Scholar", "url": "https://scholar.google.co.in/citations?user=15sE22kAAAAJ&hl=en" },
@@ -30,7 +29,8 @@
     {
       "title": "Alumni",
       "members": [
-        { "name": "Alumnus Name", "role": "Former MTech", "desc": "Now at — add current position.", "photo": "", "links": [] }
+        { "name": "Dr. Vijaykumar Bejagam (PMRF)", "role": "Former PhD Student", "desc": "Thesis title: Multi-scale Assessment of Indian Terrestrial Ecosystems under Climate Change.", "photo": "", "links": [] },
+        { "name": "Dr. Nikunj K. Mangukiya", "role": "Former PhD Student", "desc": "Thesis title: Deep Learning-based Models for Hydrological Predictions in Distinct Indian Watersheds.", "photo": "", "links": [] }
       ]
     }
   ]
