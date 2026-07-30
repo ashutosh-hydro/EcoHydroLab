@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Team — EcoHydroLab</title>
+<meta name="description" content="The people of EcoHydroLab, Department of Hydrology, IIT Roorkee.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<header class="site-header">
+  <nav class="nav wrap" aria-label="Primary">
+    <a class="brand" href="index.html">
+      <svg class="mark" viewBox="0 0 40 40" fill="none" aria-hidden="true">
+        <circle cx="20" cy="20" r="19" stroke="#2a7f9e" stroke-width="2"/>
+        <path d="M6 24c4-6 8-6 12 0s10 6 16-2" stroke="#c98a3b" stroke-width="2" fill="none"/>
+        <path d="M6 30c4-6 8-6 12 0s10 6 16-2" stroke="#6fb3c9" stroke-width="1.5" fill="none"/>
+      </svg>
+      EcoHydroLab
+    </a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    <ul class="nav-links">
+      <li><a href="index.html" >Home</a></li>
+      <li><a href="research.html" >Research</a></li>
+      <li><a href="publications.html" >Publications</a></li>
+      <li><a href="datasets.html" >Datasets &amp; Code</a></li>
+      <li><a href="team.html" class="active">Team</a></li>
+      <li><a href="news.html" >News</a></li>
+      <li><a href="join.html" >Join Us</a></li>
+    </ul>
+  </nav>
+</header>
+<section class="page-hero">
+  <div class="wrap">
+    <span class="eyebrow">Team</span>
+    <h1>The people behind EcoHydroLab</h1>
+    <p>A group of hydrologists, modelers and environmental scientists at the Department of Hydrology, IIT Roorkee.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div id="team-list"></div>
+  </div>
+</section>
+
+<script>renderTeam('team-list');</script>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <h4>EcoHydroLab</h4>
+        <p style="color:#c3cdd1">Multiscale Ecohydrological Processes, Interactions and Disturbances. Department of Hydrology, IIT Roorkee, Uttarakhand, India.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul class="footer-links">
+          <li><a href="research.html">Research</a></li>
+          <li><a href="publications.html">Publications</a></li>
+          <li><a href="datasets.html">Datasets &amp; Code</a></li>
+          <li><a href="team.html">Team</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Connect</h4>
+        <ul class="footer-links">
+          <li><a href="mailto:ashutosh.sharma@hy.iitr.ac.in">Email</a></li>
+          <li><a href="https://scholar.google.com/" target="_blank" rel="noopener">Google Scholar</a></li>
+          <li><a href="https://github.com/" target="_blank" rel="noopener">GitHub</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year"></span> EcoHydroLab, IIT Roorkee</span>
+      <span>Department of Hydrology</span>
+    </div>
+  </div>
+</footer>
+<script src="assets/js/main.js"></script>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+
+</body>
+</html>

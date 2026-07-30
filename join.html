@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Join Us — EcoHydroLab</title>
+<meta name="description" content="Opportunities to join EcoHydroLab at IIT Roorkee.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<header class="site-header">
+  <nav class="nav wrap" aria-label="Primary">
+    <a class="brand" href="index.html">
+      <svg class="mark" viewBox="0 0 40 40" fill="none" aria-hidden="true">
+        <circle cx="20" cy="20" r="19" stroke="#2a7f9e" stroke-width="2"/>
+        <path d="M6 24c4-6 8-6 12 0s10 6 16-2" stroke="#c98a3b" stroke-width="2" fill="none"/>
+        <path d="M6 30c4-6 8-6 12 0s10 6 16-2" stroke="#6fb3c9" stroke-width="1.5" fill="none"/>
+      </svg>
+      EcoHydroLab
+    </a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    <ul class="nav-links">
+      <li><a href="index.html" >Home</a></li>
+      <li><a href="research.html" >Research</a></li>
+      <li><a href="publications.html" >Publications</a></li>
+      <li><a href="datasets.html" >Datasets &amp; Code</a></li>
+      <li><a href="team.html" >Team</a></li>
+      <li><a href="news.html" >News</a></li>
+      <li><a href="join.html" class="active">Join Us</a></li>
+    </ul>
+  </nav>
+</header>
+<section class="page-hero">
+  <div class="wrap">
+    <span class="eyebrow">Join Us</span>
+    <h1>Work with us</h1>
+    <p>We are always interested in hearing from motivated students and researchers who want to work at the intersection of hydrology, ecology, machine learning and climate.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap grid grid-2">
+    <div class="reveal">
+      <h2>Who we're looking for</h2>
+      <p class="muted">Strong candidates typically have a background in civil/environmental engineering, hydrology, earth sciences, physics, or a quantitative discipline, along with:</p>
+      <ul class="join-list" style="list-style:none;margin-top:1rem">
+        <li style="border-color:var(--line)">Programming experience (Python preferred) and comfort with data</li>
+        <li style="border-color:var(--line)">Interest in modeling, machine learning or field/remote-sensing methods</li>
+        <li style="border-color:var(--line)">Curiosity and persistence for open research problems</li>
+      </ul>
+    </div>
+    <div class="reveal">
+      <div class="card">
+        <h3>Current openings</h3>
+        <p class="muted">Update this section as positions open and close.</p>
+        <p><strong>PhD:</strong> Prospective students should apply through the IIT Roorkee admissions process. Reach out beforehand describing your interests.</p>
+        <p><strong>Postdoc / Project staff:</strong> Positions are advertised when funded — email to express interest.</p>
+        <p><strong>Interns / MTech projects:</strong> IIT Roorkee students are welcome to enquire about projects.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--dark">
+  <div class="wrap reveal">
+    <div class="section-head">
+      <span class="eyebrow">How to apply</span>
+      <h2>Get in touch</h2>
+    </div>
+    <p>Email the PI with your CV, a short statement of research interests, and a note on why EcoHydroLab specifically. Mention any relevant coursework, projects or publications.</p>
+    <div class="hero-cta">
+      <a class="btn" href="mailto:ashutosh.sharma@hy.iitr.ac.in?subject=Prospective%20student%20enquiry" style="background:var(--sediment);border-color:var(--sediment);color:var(--ink)">Email the PI</a>
+      <a class="btn btn--ghost" href="research.html">Read about our research</a>
+    </div>
+  </div>
+</section>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <h4>EcoHydroLab</h4>
+        <p style="color:#c3cdd1">Multiscale Ecohydrological Processes, Interactions and Disturbances. Department of Hydrology, IIT Roorkee, Uttarakhand, India.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul class="footer-links">
+          <li><a href="research.html">Research</a></li>
+          <li><a href="publications.html">Publications</a></li>
+          <li><a href="datasets.html">Datasets &amp; Code</a></li>
+          <li><a href="team.html">Team</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Connect</h4>
+        <ul class="footer-links">
+          <li><a href="mailto:ashutosh.sharma@hy.iitr.ac.in">Email</a></li>
+          <li><a href="https://scholar.google.com/" target="_blank" rel="noopener">Google Scholar</a></li>
+          <li><a href="https://github.com/" target="_blank" rel="noopener">GitHub</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year"></span> EcoHydroLab, IIT Roorkee</span>
+      <span>Department of Hydrology</span>
+    </div>
+  </div>
+</footer>
+<script src="assets/js/main.js"></script>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+
+</body>
+</html>

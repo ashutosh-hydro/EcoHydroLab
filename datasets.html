@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Datasets and Code — EcoHydroLab</title>
+<meta name="description" content="Open datasets and reproducible code from EcoHydroLab, including CAMELS-IND.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<header class="site-header">
+  <nav class="nav wrap" aria-label="Primary">
+    <a class="brand" href="index.html">
+      <svg class="mark" viewBox="0 0 40 40" fill="none" aria-hidden="true">
+        <circle cx="20" cy="20" r="19" stroke="#2a7f9e" stroke-width="2"/>
+        <path d="M6 24c4-6 8-6 12 0s10 6 16-2" stroke="#c98a3b" stroke-width="2" fill="none"/>
+        <path d="M6 30c4-6 8-6 12 0s10 6 16-2" stroke="#6fb3c9" stroke-width="1.5" fill="none"/>
+      </svg>
+      EcoHydroLab
+    </a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    <ul class="nav-links">
+      <li><a href="index.html" >Home</a></li>
+      <li><a href="research.html" >Research</a></li>
+      <li><a href="publications.html" >Publications</a></li>
+      <li><a href="datasets.html" class="active">Datasets &amp; Code</a></li>
+      <li><a href="team.html" >Team</a></li>
+      <li><a href="news.html" >News</a></li>
+      <li><a href="join.html" >Join Us</a></li>
+    </ul>
+  </nav>
+</header>
+<section class="page-hero">
+  <div class="wrap">
+    <span class="eyebrow">Datasets &amp; Code</span>
+    <h1>Open data and reproducible code</h1>
+    <p>We share datasets, trained models and analysis code to support open, reproducible hydrology.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="dataset-feature reveal">
+      <div>
+        <span class="eyebrow">Flagship dataset</span>
+        <h2>CAMELS-IND</h2>
+        <p class="muted">Catchment Attributes and Meteorology for Large-sample Studies – India. Daily meteorological time series, observed and LSTM-predicted streamflow, and static catchment attributes for 472 catchments in Peninsular India — designed to foster large-sample hydrological studies and bring Indian catchments into global research.</p>
+        <div class="dataset-stat">
+          <div><div class="num">472</div><div class="lbl">catchments</div></div>
+          <div><div class="num">Daily</div><div class="lbl">time series</div></div>
+          <div><div class="num">ESSD</div><div class="lbl">peer-reviewed</div></div>
+        </div>
+        <div class="pub-links">
+          <a href="https://zenodo.org/records/13221214" target="_blank" rel="noopener">Data on Zenodo ↗</a>
+          <a href="https://doi.org/10.5194/essd-17-461-2025" target="_blank" rel="noopener">Manuscript (ESSD) ↗</a>
+        </div>
+      </div>
+      <div class="card" style="padding:0;overflow:hidden">
+        <svg viewBox="0 0 500 340" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Stylised map of 472 catchments across Peninsular India"><rect width="500" height="340" fill="#eeece4"/><path d="M180 30 L250 40 L300 90 L330 160 L300 250 L250 300 L200 280 L160 210 L150 120 Z" fill="#dce6ea" stroke="#2a7f9e" stroke-width="1.5"/><g fill="#2a7f9e" opacity="0.55"><circle cx="210" cy="90" r="4"/><circle cx="240" cy="120" r="4"/><circle cx="200" cy="140" r="4"/><circle cx="260" cy="160" r="4"/><circle cx="220" cy="180" r="4"/><circle cx="250" cy="210" r="4"/><circle cx="200" cy="220" r="4"/><circle cx="230" cy="250" r="4"/><circle cx="185" cy="170" r="4"/><circle cx="275" cy="130" r="4"/><circle cx="215" cy="250" r="4"/><circle cx="255" cy="90" r="4"/></g><path d="M240 60 C 235 120, 250 180, 225 260" fill="none" stroke="#c98a3b" stroke-width="2"/></svg>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--alt">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Code repositories</span>
+      <h2>Software &amp; models</h2>
+      <p>Replace these placeholders with your GitHub repositories — model code, training pipelines and analysis notebooks.</p>
+    </div>
+    <div class="grid grid-3">
+      <div class="card reveal">
+        <h3>LSTM streamflow models</h3>
+        <p>Training and inference code for LSTM-based streamflow prediction across large samples.</p>
+        <p class="pub-links"><a href="https://github.com/" target="_blank" rel="noopener">GitHub ↗</a></p>
+      </div>
+      <div class="card reveal">
+        <h3>Differentiable hybrid models</h3>
+        <p>Physics-informed differentiable hydrological modeling framework.</p>
+        <p class="pub-links"><a href="https://github.com/" target="_blank" rel="noopener">GitHub ↗</a></p>
+      </div>
+      <div class="card reveal">
+        <h3>CAMELS-IND tools</h3>
+        <p>Loaders and example notebooks for working with the CAMELS-IND dataset.</p>
+        <p class="pub-links"><a href="https://github.com/" target="_blank" rel="noopener">GitHub ↗</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <h4>EcoHydroLab</h4>
+        <p style="color:#c3cdd1">Multiscale Ecohydrological Processes, Interactions and Disturbances. Department of Hydrology, IIT Roorkee, Uttarakhand, India.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul class="footer-links">
+          <li><a href="research.html">Research</a></li>
+          <li><a href="publications.html">Publications</a></li>
+          <li><a href="datasets.html">Datasets &amp; Code</a></li>
+          <li><a href="team.html">Team</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Connect</h4>
+        <ul class="footer-links">
+          <li><a href="mailto:ashutosh.sharma@hy.iitr.ac.in">Email</a></li>
+          <li><a href="https://scholar.google.com/" target="_blank" rel="noopener">Google Scholar</a></li>
+          <li><a href="https://github.com/" target="_blank" rel="noopener">GitHub</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year"></span> EcoHydroLab, IIT Roorkee</span>
+      <span>Department of Hydrology</span>
+    </div>
+  </div>
+</footer>
+<script src="assets/js/main.js"></script>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+
+</body>
+</html>
