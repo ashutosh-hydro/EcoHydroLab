@@ -31,23 +31,36 @@
 })();
 
 // ---- Data loader helper ----
+// Returns { data } on success or { error } on failure, so callers can show why.
 async function loadJSON(path) {
+  let res;
   try {
-    const res = await fetch(path);
-    if (!res.ok) throw new Error(res.status);
-    return await res.json();
+    res = await fetch(path);
   } catch (err) {
-    console.error('Failed to load', path, err);
-    return null;
+    return { error: 'Network error fetching ' + path + ' — ' + err.message };
   }
+  if (!res.ok) {
+    return { error: 'Could not load ' + path + ' (HTTP ' + res.status + '). Check the file exists and the name/case matches exactly.' };
+  }
+  const text = await res.text();
+  try {
+    return { data: JSON.parse(text) };
+  } catch (err) {
+    return { error: 'The file ' + path + ' loaded but is not valid JSON: ' + err.message + '. Common causes: a smart/curly quote (“ ” ‘ ’) instead of straight ("), or a trailing comma.' };
+  }
+}
+function showError(mount, msg) {
+  mount.innerHTML = '<p style="color:#b23b3b;font-family:var(--mono);font-size:.85rem;line-height:1.6">' + msg + '</p>';
+  console.error(msg);
 }
 
 // ---- Publications renderer ----
 async function renderPublications(mountId) {
   const mount = document.getElementById(mountId);
   if (!mount) return;
-  const data = await loadJSON('data/publications.json');
-  if (!data) { mount.innerHTML = '<p class="muted">Publications list could not be loaded.</p>'; return; }
+  const result = await loadJSON('data/publications.json');
+  if (result.error) { showError(mount, result.error); return; }
+  const data = result.data;
 
   const tags = [...new Set(data.flatMap(p => p.tags || []))].sort();
   const controls = document.getElementById('pub-filters');
@@ -100,8 +113,9 @@ async function renderPublications(mountId) {
 async function renderTeam(mountId) {
   const mount = document.getElementById(mountId);
   if (!mount) return;
-  const data = await loadJSON('data/team.json');
-  if (!data) { mount.innerHTML = '<p class="muted">Team list could not be loaded.</p>'; return; }
+  const result = await loadJSON('data/team.json');
+  if (result.error) { showError(mount, result.error); return; }
+  const data = result.data;
 
   const groups = data.groups || [];
   mount.innerHTML = groups.map(g => `
@@ -132,8 +146,9 @@ async function renderTeam(mountId) {
 async function renderNews(mountId, limit) {
   const mount = document.getElementById(mountId);
   if (!mount) return;
-  const data = await loadJSON('data/news.json');
-  if (!data) { mount.innerHTML = '<p class="muted">News could not be loaded.</p>'; return; }
+  const result = await loadJSON('data/news.json');
+  if (result.error) { showError(mount, result.error); return; }
+  const data = result.data;
   const items = limit ? data.slice(0, limit) : data;
   mount.innerHTML = items.map(n => `
     <div class="news-item">
