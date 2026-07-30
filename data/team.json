@@ -6,10 +6,11 @@
         {
           "name": "Ashutosh Sharma",
           "role": "Associate Professor",
-          "desc": "Department of Hydrology, IIT Roorkee. Large-sample hydrology, physics-informed & deep learning models, hydroclimatic extremes.",
+          "desc": "Department of Hydrology, IIT Roorkee.",
+          "desc": "Joint Faculty, International Centre of Excellence for Dams (ICED)",
           "photo": "",
           "links": [
-            { "label": "Scholar", "url": "https://scholar.google.com/" },
+            { "label": "Google Scholar", "url": "https://scholar.google.co.in/citations?user=15sE22kAAAAJ&hl=en" },
             { "label": "Email", "url": "mailto:ashutosh.sharma@hy.iitr.ac.in" }
           ]
         }
@@ -18,9 +19,12 @@
     {
       "title": "Research Scholars",
       "members": [
-        { "name": "PhD Student", "role": "PhD Scholar", "desc": "Add research focus here.", "photo": "", "links": [] },
-        { "name": "PhD Student", "role": "PhD Scholar", "desc": "Add research focus here.", "photo": "", "links": [] },
-        { "name": "PhD Student", "role": "PhD Scholar", "desc": "Add research focus here.", "photo": "", "links": [] }
+        { "name": "Ms. Pooja Patle", "role": "PMRF PhD Scholar", "desc": "Assessment of water resources via water accounts techniques, Hydrological modelling, Water productivity and water scarcity mapping.", "photo": "", "links": [] },
+        { "name": "Ms. Nagashree GE (PMRF)", "role": "PhD Scholar", "desc": "Water-Energy- Food-Ecosystem Nexus, and Forest fire impact on terrestrial ecosystem.", "photo": "", "links": [] },
+        { "name": "Mr. Prakhar Sharma", "role": "PhD Scholar", "desc": "Ecosystem Services, Ecohydrology, Water Accounting, and Ecohydrological modeling.", "photo": "", "links": [] },
+        { "name": "Ms. Anusha Somisetty", "role": "PhD Scholar", "desc": "Climate change, Freshwater ecosystem services, Large-scale atmospheric circulation and teleconnection.", "photo": "", "links": [] },
+        { "name": "Ms. Akriti Singh", "role": "PhD Scholar", "desc": "Interaction between terrestrial ecosystem and groundwater, Terrestrial ecosystem dynamics, and Ecohydrological modelling.", "photo": "", "links": [] }
+
       ]
     },
     {
