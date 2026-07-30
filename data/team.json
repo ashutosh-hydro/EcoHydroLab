@@ -18,13 +18,17 @@
     {
       "title": "Research Scholars",
       "members": [
-        { "name": "Ms. Pooja Patle", "role": "PMRF PhD Scholar", "desc": "Assessment of water resources via water accounts techniques, Hydrological modelling, Water productivity and water scarcity mapping.", "photo": "", "links": [] },
-        { "name": "Ms. Nagashree GE (PMRF)", "role": "PhD Scholar", "desc": "Water-Energy- Food-Ecosystem Nexus, and Forest fire impact on terrestrial ecosystem.", "photo": "", "links": [] },
-        { "name": "Mr. Prakhar Sharma", "role": "PhD Scholar", "desc": "Ecosystem Services, Ecohydrology, Water Accounting, and Ecohydrological modeling.", "photo": "", "links": [] },
-        { "name": "Ms. Anusha Somisetty", "role": "PhD Scholar", "desc": "Climate change, Freshwater ecosystem services, Large-scale atmospheric circulation and teleconnection.", "photo": "", "links": [] },
-        { "name": "Ms. Akriti Singh", "role": "PhD Scholar", "desc": "Interaction between terrestrial ecosystem and groundwater, Terrestrial ecosystem dynamics, and Ecohydrological modelling.", "photo": "", "links": [] },
-        { "name": "Mr. Gopeshwar Sahu", "role": "PhD Scholar", "desc": "ML & AI, Hydrology, and Rainfall-Runoff Modeling", "photo": "", "links": [] }
-
+        { "name": "Pooja Patle", "role": "PMRF PhD Scholar", "desc": "Unravelling the present and future water resources availability in complex Indian river basin through a coupled hydrological modelling-water accounting framework.", "photo": "", "links": [] },
+        { "name": "Nagashree GE (PMRF)", "role": "PhD Scholar", "desc": "Development of a multi-dimensional nexus framework for addressing water scarcity at basin scale.", "photo": "", "links": [] },
+        { "name": "Prakhar Sharma", "role": "PhD Scholar", "desc": "Assessment of Freshwater Ecosystem Services and determination of Ecological Functional Zones in distinct Himalayan catchments (Co-supervisor: Prof. Sumit Sen).", "photo": "", "links": [] },
+        { "name": "Anusha Somisetty", "role": "PhD Scholar", "desc": "Hydrological water budgeting and assessment of climate extremes in Himalayan Catchments (Co-supervisor: Dr. Vishal Singh, NIH Roorkee).", "photo": "", "links": [] },
+        { "name": "Akriti Singh", "role": "PhD Scholar", "desc": "Comparative assessment of Hydrological Resilience of Catchments in Peninsular India Considering Adaptation Scenarios.", "photo": "", "links": [] },
+        { "name": "Gopeshwar Sahu", "role": "PhD Scholar", "desc": "Physics-informed machine learning for hydrological modelling for human-influenced catchments.", "photo": "", "links": [] },
+        { "name": "Truptimayee Ghosh", "role": "PhD Scholar", "desc": "Improving vegetation representation in hydrological modelling.", "photo": "", "links": [] },
+        { "name": "Varun Bhasin", "role": "PhD Scholar", "desc": "AI-Integrated Hydrological and Flood Risk Modelling for Dam Safety (Co-supervisor: Prof. NK Goel).", "photo": "", "links": [] },
+        { "name": "Sakshi Tripathi", "role": "PhD Scholar", "desc": "Extraction of snow-related Essential Climate Variables (ECVs) for Indian North Western Himalayas (Co-supervisor: Dr. Praveen Thakur, IIRS Dehradun).", "photo": "", "links": [] },
+        { "name": "Rudraksh Singh Tomar", "role": "PhD Scholar", "desc": "AI-integrated streamflow forecasting in Narmada basin.", "photo": "", "links": [] },
+        { "name": "Santosh Pathak", "role": "PhD Scholar", "desc": "Large-sample hydrology.", "photo": "", "links": [] },
       ]
     },
     {
