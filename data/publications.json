@@ -1,70 +1,584 @@
 [
   {
-    "title": "CAMELS-IND: Catchment Attributes and Meteorology for Large-sample Studies – India",
+    "title": "Hydrological evaluation of gridded precipitation datasets for assessment of hydroclimatic changes in Himalayan upper Beas basin",
+    "authors": "Somisetty, A., Singh, V., & Sharma, A.",
+    "venue": "Theoretical and Applied Climatology",
+    "year": 2026,
+    "type": "Article",
+    "doi": "10.1007/s00704-026-06457-8",
+    "tags": [
+      "Hydroclimatic Extremes",
+      "Datasets"
+    ]
+  },
+  {
+    "title": "Benchmarking and Selecting Optimal Hydrological Models for Large-Sample Applications Considering Complexity and Uncertainty",
+    "authors": "Mangukiya, N. K., Sahu, G., Gupta, S., & Sharma, A.",
+    "venue": "Water Resources Research",
+    "year": 2026,
+    "type": "Article",
+    "featured": true,
+    "doi": "10.1029/2026WR044753",
+    "tags": [
+      "Large-sample",
+      "Modeling"
+    ]
+  },
+  {
+    "title": "Harnessing multi-source hydro-meteorological data for high flows modelling in a partially glacierized Himalayan basin",
+    "authors": "De Santis, D., Barbetta, S., Sen, S., Maggioni, V., Bahmanpouri, F., Sharma, A., Agarwal, A., Gupta, S., Avanzi, F., & Massari, C.",
+    "venue": "Natural Hazards and Earth System Sciences",
+    "year": 2026,
+    "type": "Article",
+    "doi": "10.5194/nhess-26-1075-2026",
+    "tags": [
+      "Hydroclimatic Extremes",
+      "Modeling"
+    ]
+  },
+  {
+    "title": "Climate change-driven hydroclimatic shifts and energy prospects: Insights from a snow-fed river basin in Western Himalaya",
+    "authors": "Kant, C., Meena, R. S., Singh, S. K., Thakur, P. K., & Sharma, A.",
+    "venue": "Progress in Physical Geography: Earth and Environment",
+    "year": 2026,
+    "type": "Article",
+    "doi": "10.1177/03091333261428549",
+    "tags": [
+      "Climate Change"
+    ]
+  },
+  {
+    "title": "Integrating Analytical Hierarchy Process and Machine Learning for Enhancing Flood Hazard Mapping",
+    "authors": "Mangukiya, N. K., Baruah, A., Barman, D., Arjun, B. M., & Sharma, A.",
+    "venue": "ASCE Natural Hazards Review",
+    "year": 2025,
+    "type": "Article",
+    "doi": "10.1061/NHREFO.NHENG-2188",
+    "tags": [
+      "Flood",
+      "Deep Learning"
+    ]
+  },
+  {
+    "title": "Does MC-LSTM model improve the reliability of streamflow prediction in human-influenced watersheds?",
+    "authors": "Sahu, G., Mangukiya, N. K., & Sharma, A.",
+    "venue": "Journal of Hydrology",
+    "year": 2025,
+    "type": "Article",
+    "doi": "10.1016/j.jhydrol.2025.134711",
+    "tags": [
+      "Deep Learning",
+      "Modeling"
+    ]
+  },
+  {
+    "title": "Evaluating sectoral water use and precipitation variability on blue water scarcity under historical and future climate conditions in the Mahi River Basin",
+    "authors": "Nagashree, G. E., & Sharma, A.",
+    "venue": "Agricultural Water Management",
+    "year": 2025,
+    "type": "Article",
+    "doi": "10.1016/j.agwat.2025.110006",
+    "tags": [
+      "Water Accounting",
+      "Climate Change"
+    ]
+  },
+  {
+    "title": "Agricultural catchments exhibit enhanced climate and drought resilience compared to forested catchments in Peninsular India",
+    "authors": "Singh, A., & Sharma, A.",
+    "venue": "Journal of Hydrology",
+    "year": 2025,
+    "type": "Article",
+    "doi": "10.1016/j.jhydrol.2025.134618",
+    "tags": [
+      "Ecohydrology",
+      "Climate Change"
+    ]
+  },
+  {
+    "title": "Integrating Reservoir Dynamics into Differentiable Process-Based Hydrological Model for Enhanced Streamflow Estimation",
+    "authors": "Mangukiya, N. K., & Sharma, A.",
+    "venue": "Water Resources Research",
+    "year": 2025,
+    "type": "Article",
+    "featured": true,
+    "doi": "10.1029/2025WR040268",
+    "tags": [
+      "Modeling",
+      "Deep Learning"
+    ]
+  },
+  {
+    "title": "Increasing Cumulative Impacts of Droughts Under Climate Change Does Not Alter the Ecosystem Resilience in India",
+    "authors": "Bejagam, V., & Sharma, A.",
+    "venue": "Earth's Future",
+    "year": 2025,
+    "type": "Article",
+    "doi": "10.1029/2024EF005888",
+    "tags": [
+      "Ecohydrology",
+      "Climate Change"
+    ]
+  },
+  {
+    "title": "A novel coupled hydrological model-water accounting framework for quantification of water resources and agricultural production",
+    "authors": "Patle, P., & Sharma, A.",
+    "venue": "Journal of Hydrology",
+    "year": 2025,
+    "type": "Article",
+    "doi": "10.1016/j.jhydrol.2025.133676",
+    "tags": [
+      "Water Accounting",
+      "Modeling"
+    ]
+  },
+  {
+    "title": "CAMELS-IND: Hydrometeorological time series and catchment attributes for 228 catchments in Peninsular India",
     "authors": "Mangukiya, N. K., Kumar, K. B., Dey, P., Sharma, S., Bejagam, V., Mujumdar, P. P., & Sharma, A.",
     "venue": "Earth System Science Data",
     "year": 2025,
     "type": "Dataset",
     "featured": true,
     "doi": "10.5194/essd-17-461-2025",
-    "tags": ["Large-sample", "Datasets"],
+    "tags": [
+      "Large-sample",
+      "Datasets"
+    ],
     "links": [
-      { "label": "Data (Zenodo)", "url": "https://zenodo.org/records/13221214" }
+      {
+        "label": "Data (Zenodo)",
+        "url": "https://zenodo.org/records/13221214"
+      }
     ]
   },
   {
-    "title": "Enhancing Streamflow Prediction in Watersheds With Aggregated and Intermittent Observations",
-    "authors": "EcoHydroLab",
+    "title": "Deep learning-based approach for enhancing streamflow prediction in watersheds with aggregated and intermittent observations",
+    "authors": "Mangukiya, N. K., & Sharma, A.",
     "venue": "Water Resources Research",
     "year": 2025,
     "type": "Article",
     "featured": true,
     "doi": "10.1029/2024WR037331",
-    "tags": ["Deep Learning", "Modeling"]
+    "tags": [
+      "Deep Learning",
+      "Modeling"
+    ]
   },
   {
-    "title": "Ecosystem services in the Himalayas under climate change",
-    "authors": "EcoHydroLab",
+    "title": "Spatial heterogeneity of ecosystem services and their valuation across Himalayas: A systematic literature review and meta-analysis",
+    "authors": "Sharma, P., Prashanth, S. S., Sharma, A., & Sen, S.",
     "venue": "Environmental Research Letters",
-    "year": 2025,
+    "year": 2024,
     "type": "Article",
+    "featured": true,
     "doi": "10.1088/1748-9326/ad9abc",
-    "tags": ["Ecohydrology", "Ecosystem Services"]
+    "tags": [
+      "Ecosystem Services",
+      "Ecohydrology"
+    ]
   },
   {
-    "title": "Deep learning-based Regional Flood Frequency Analysis",
-    "authors": "EcoHydroLab",
+    "title": "Application of the Entropy Model to Estimate Flow Discharge and Bed Load Transport with Limited Field Measurements",
+    "authors": "Bahmanpouri, F., Yadav, A., Massari, C., De Santis, D., Sharma, A., Agarwal, A., Sen, S., Fraccarollo, L., Moramarco, T., & Barbetta, S.",
+    "venue": "Water",
+    "year": 2024,
+    "type": "Article",
+    "doi": "10.3390/w16243684",
+    "tags": [
+      "Modeling"
+    ]
+  },
+  {
+    "title": "Investigating the role of groundwater in Ecosystem Water Use Efficiency in India considering irrigation, climate and land use",
+    "authors": "Singh, A., Bejagam, V., & Sharma, A.",
+    "venue": "Groundwater for Sustainable Development",
+    "year": 2024,
+    "type": "Article",
+    "doi": "10.1016/j.gsd.2024.101363",
+    "tags": [
+      "Ecohydrology"
+    ]
+  },
+  {
+    "title": "A novel multi-model ensemble framework for fluvial flood inundation mapping",
+    "authors": "Mangukiya, N. K., Kushwaha, S., & Sharma, A.",
+    "venue": "Environmental Modelling & Software",
+    "year": 2024,
+    "type": "Article",
+    "doi": "10.1016/j.envsoft.2024.106163",
+    "tags": [
+      "Flood",
+      "Modeling"
+    ]
+  },
+  {
+    "title": "Performance analysis of physically-based (HEC-RAS, CADDIES) and AI-based (LSTM) flood models for two case studies",
+    "authors": "Batalini de Macedo, M., Mangukiya, N. K., Fava, M. C., Sharma, A., Fray da Silva, R., Agarwal, A., Razzolini, M. T., Mendiondo, E. M., Goel, N. K., & Kurian, M.",
+    "venue": "Proceedings of IAHS",
+    "year": 2024,
+    "type": "Article",
+    "doi": "10.5194/piahs-386-41-2024",
+    "tags": [
+      "Flood",
+      "Deep Learning"
+    ]
+  },
+  {
+    "title": "Projected decline in the strengths of vegetation carbon sequestration under climate change in India",
+    "authors": "Bejagam, V., Sharma, A., & Wei, X.",
+    "venue": "Science of the Total Environment",
+    "year": 2024,
+    "type": "Article",
+    "featured": true,
+    "doi": "10.1016/j.scitotenv.2024.170166",
+    "tags": [
+      "Ecohydrology",
+      "Climate Change"
+    ]
+  },
+  {
+    "title": "Alternate Pathway for Regional Flood Frequency Analysis in Data-sparse Region",
+    "authors": "Mangukiya, N. K., & Sharma, A.",
     "venue": "Journal of Hydrology",
     "year": 2024,
     "type": "Article",
     "doi": "10.1016/j.jhydrol.2024.130635",
-    "tags": ["Deep Learning", "Extremes"]
+    "tags": [
+      "Flood",
+      "Deep Learning"
+    ]
   },
   {
-    "title": "Vegetation Carbon Sequestration under Climate Change in India",
-    "authors": "EcoHydroLab",
-    "venue": "Science of the Total Environment",
-    "year": 2024,
+    "title": "Editorial of \"Water security for sustainable development\"",
+    "authors": "Agarwal, A., Sarkar, A., Pandey, A., Kumar, A., & Sharma, A.",
+    "venue": "Water Security",
+    "year": 2023,
     "type": "Article",
-    "doi": "10.1016/j.scitotenv.2024.170166",
-    "tags": ["Ecohydrology", "Climate Change"]
+    "doi": "10.1016/j.wasec.2023.100157",
+    "tags": [
+      "Water Accounting"
+    ]
   },
   {
-    "title": "Deep learning-based hydrological modeling for Indian watersheds",
-    "authors": "EcoHydroLab",
+    "title": "Management practices regulate the response of canopy and ecosystem water use efficiency in cropland ecosystems",
+    "authors": "Chen, Y., Tang, X., Yao, L., Zhao, Y., Li, G., Wu, C., Zhou, Y., & Sharma, A.",
+    "venue": "Field Crops Research",
+    "year": 2023,
+    "type": "Article",
+    "doi": "10.1016/j.fcr.2023.109166",
+    "tags": [
+      "Ecohydrology"
+    ]
+  },
+  {
+    "title": "Machine Learning-based Regional Flood Frequency Analysis of Indian Watersheds",
+    "authors": "Mangukiya, N. K., Kumar, A., & Sharma, A.",
+    "venue": "CLEAN - Soil, Air, Water",
+    "year": 2023,
+    "type": "Article",
+    "doi": "10.1002/clen.202300120",
+    "tags": [
+      "Flood",
+      "Deep Learning"
+    ]
+  },
+  {
+    "title": "Evaluation of Water Resources in a Complex River Basin using Water Accounting Plus (WA+): A case study of Mahi River Basin in India",
+    "authors": "Patle, P., & Sharma, A.",
+    "venue": "ASCE Journal of Water Resources Planning and Management",
+    "year": 2023,
+    "type": "Article",
+    "doi": "10.1061/JWRMD5.WRENG-6125",
+    "tags": [
+      "Water Accounting"
+    ]
+  },
+  {
+    "title": "How to enhance hydrological predictions in hydrologically distinct watersheds of the Indian subcontinent?",
+    "authors": "Mangukiya, N. K., Sharma, A., & Shen, C.",
     "venue": "Hydrological Processes",
     "year": 2023,
     "type": "Article",
     "doi": "10.1002/hyp.14936",
-    "tags": ["Deep Learning", "Modeling"]
+    "tags": [
+      "Deep Learning",
+      "Modeling"
+    ]
   },
   {
-    "title": "Ecohydrological Indicators (EHIs) in India",
-    "authors": "EcoHydroLab",
+    "title": "Dynamically Coupling System Dynamics and SWAT+ Models using Tinamit: Applications of Modular Tools for Coupled Human-Water Systems Models",
+    "authors": "Harms, J. Z., Malard, J. J., Adamowski, J. F., Sharma, A., & Nkwasa, A.",
+    "venue": "Hydrology and Earth System Sciences",
+    "year": 2023,
+    "type": "Article",
+    "doi": "10.5194/hess-27-1683-2023",
+    "tags": [
+      "Modeling"
+    ]
+  },
+  {
+    "title": "Spatiotemporal variability and controlling factors of ecosystem water use efficiency in India",
+    "authors": "Bejagam, V., Singh, A., & Sharma, A.",
+    "venue": "Theoretical and Applied Climatology",
+    "year": 2023,
+    "type": "Article",
+    "doi": "10.1007/s00704-023-04418-z",
+    "tags": [
+      "Ecohydrology"
+    ]
+  },
+  {
+    "title": "Evaluation of Hybrid Wavelet Models for Regional Drought Forecasting",
+    "authors": "Hinge, G., Piplodiya, J., Sharma, A., Hamouda, M. A., & Mohamed, M. M.",
+    "venue": "Remote Sensing",
+    "year": 2022,
+    "type": "Article",
+    "doi": "10.3390/rs14246381",
+    "tags": [
+      "Climate Change",
+      "Modeling"
+    ]
+  },
+  {
+    "title": "Remote sensing-based multi-scale characterization of ecohydrological indicators (EHIs) in India",
+    "authors": "Bejagam, V., & Sharma, A.",
     "venue": "Ecological Engineering",
     "year": 2022,
     "type": "Article",
     "doi": "10.1016/j.ecoleng.2022.106841",
-    "tags": ["Ecohydrology"]
+    "tags": [
+      "Ecohydrology"
+    ]
+  },
+  {
+    "title": "Integrated groundwater quality analysis using Water Quality Index, GIS and multivariate technique: a case study of Guwahati City",
+    "authors": "Hinge, G., Bharali, B., Baruah, A., & Sharma, A.",
+    "venue": "Environmental Earth Sciences",
+    "year": 2022,
+    "type": "Article",
+    "doi": "10.1007/s12665-022-10544-0",
+    "tags": [
+      "Water Accounting"
+    ]
+  },
+  {
+    "title": "Impact of climatic changes and anthropogenic activities on ecosystem net primary productivity in India during 2001-2019",
+    "authors": "Bejagam, V., & Sharma, A.",
+    "venue": "Ecological Informatics",
+    "year": 2022,
+    "type": "Article",
+    "doi": "10.1016/j.ecoinf.2022.101732",
+    "tags": [
+      "Ecohydrology",
+      "Climate Change"
+    ]
+  },
+  {
+    "title": "Evaluation of Gangetic dolphin habitat suitability under hydroclimatic changes using a coupled hydrological-hydrodynamic approach",
+    "authors": "Sharma, A., Baruah, A., Mangukiya, N., Hinge, G., & Bharali, B.",
+    "venue": "Ecological Informatics",
+    "year": 2022,
+    "type": "Article",
+    "doi": "10.1016/j.ecoinf.2022.101639",
+    "tags": [
+      "Ecohydrology",
+      "Modeling"
+    ]
+  },
+  {
+    "title": "Flood risk mapping for the lower Narmada basin in India: a machine learning and IoT-based framework",
+    "authors": "Mangukiya, N. K., & Sharma, A.",
+    "venue": "Natural Hazards",
+    "year": 2022,
+    "type": "Article",
+    "doi": "10.1007/s11069-022-05359-y",
+    "tags": [
+      "Flood",
+      "Deep Learning"
+    ]
+  },
+  {
+    "title": "Regional sustainable development of renewable natural resources using Net Primary Productivity on a global scale",
+    "authors": "Dubey, S., Sharma, A., Panchariya, V. K., Goyal, M. K., Surampalli, R. Y., & Zhang, T. C.",
+    "venue": "Ecological Indicators",
+    "year": 2021,
+    "type": "Article",
+    "doi": "10.1016/j.ecolind.2021.107768",
+    "tags": [
+      "Ecohydrology"
+    ]
+  },
+  {
+    "title": "Transferring Hydrologic Data Across Continents - Leveraging Data-Rich Regions to Improve Hydrologic Prediction in Data-Sparse Regions",
+    "authors": "Ma, K., Feng, D., Lawson, K., Tsai, W.-P., Liang, C., Huang, X., Sharma, A., & Shen, C.",
+    "venue": "Water Resources Research",
+    "year": 2021,
+    "type": "Article",
+    "featured": true,
+    "doi": "10.1029/2020WR028600",
+    "tags": [
+      "Deep Learning",
+      "Large-sample"
+    ]
+  },
+  {
+    "title": "Critical Risk Indicators (CRIs) for the electric power grid: A survey and discussion of interconnected effects",
+    "authors": "Che-Castaldo, J. P., Cousin, R., Sharma, A., Shen, C., & Matteson, D. S.",
+    "venue": "Environment Systems and Decisions",
+    "year": 2021,
+    "type": "Article",
+    "doi": "10.1007/s10669-021-09822-2",
+    "tags": [
+      "Modeling"
+    ]
+  },
+  {
+    "title": "Assessment of Drought Trend and Variability in India using Wavelet Transform",
+    "authors": "Sharma, A., & Goyal, M. K.",
+    "venue": "Hydrological Sciences Journal",
+    "year": 2020,
+    "type": "Article",
+    "doi": "10.1080/02626667.2020.1754422",
+    "tags": [
+      "Climate Change"
+    ]
+  },
+  {
+    "title": "Assessment of the Changes in Precipitation and Temperature in Teesta River Basin in Indian Himalayan Region under Climate Change",
+    "authors": "Sharma, A., & Goyal, M. K.",
+    "venue": "Atmospheric Research",
+    "year": 2020,
+    "type": "Article",
+    "doi": "10.1016/j.atmosres.2019.104670",
+    "tags": [
+      "Climate Change"
+    ]
+  },
+  {
+    "title": "Probabilistic evaluation of vegetation drought likelihood and its implications to resilience across India",
+    "authors": "Jha, S., Das, J., Sharma, A., Hazra, B., & Goyal, M. K.",
+    "venue": "Global and Planetary Change",
+    "year": 2019,
+    "type": "Article",
+    "doi": "10.1016/j.gloplacha.2019.01.014",
+    "tags": [
+      "Ecohydrology",
+      "Climate Change"
+    ]
+  },
+  {
+    "title": "Assessment of future water provisioning and sediment load under climate and LULC change scenarios in a peninsular river basin, India",
+    "authors": "Khan, M., Sharma, A., & Goyal, M. K.",
+    "venue": "Hydrological Sciences Journal",
+    "year": 2019,
+    "type": "Article",
+    "doi": "10.1080/02626667.2019.1584401",
+    "tags": [
+      "Climate Change",
+      "Modeling"
+    ]
+  },
+  {
+    "title": "District-level assessment of the ecohydrological resilience to hydroclimatic disturbances and its controlling factors in India",
+    "authors": "Sharma, A., & Goyal, M. K.",
+    "venue": "Journal of Hydrology",
+    "year": 2018,
+    "type": "Article",
+    "doi": "10.1016/j.jhydrol.2018.07.079",
+    "tags": [
+      "Ecohydrology",
+      "Climate Change"
+    ]
+  },
+  {
+    "title": "Assessment of ecosystem resilience to hydroclimatic disturbances in India",
+    "authors": "Sharma, A., & Goyal, M. K.",
+    "venue": "Global Change Biology",
+    "year": 2018,
+    "type": "Article",
+    "featured": true,
+    "doi": "10.1111/gcb.13874",
+    "tags": [
+      "Ecohydrology",
+      "Climate Change"
+    ]
+  },
+  {
+    "title": "Assessment of the impacts of climatic variability and anthropogenic stress on hydrologic resilience to warming shifts in Peninsular India",
+    "authors": "Sinha, J., Sharma, A., Khan, M., & Goyal, M. K.",
+    "venue": "Scientific Reports",
+    "year": 2018,
+    "type": "Article",
+    "doi": "10.1038/s41598-018-32091-0",
+    "tags": [
+      "Ecohydrology",
+      "Climate Change"
+    ]
+  },
+  {
+    "title": "Comparative assessment of SWAT model performance in two distinct catchments under various DEM scenarios of varying resolution, sources and resampling methods",
+    "authors": "Goyal, M. K., Panchariya, V., Sharma, A., & Singh, V.",
+    "venue": "Water Resources Management",
+    "year": 2018,
+    "type": "Article",
+    "doi": "10.1007/s11269-017-1840-1",
+    "tags": [
+      "Modeling"
+    ]
+  },
+  {
+    "title": "Prediction of flow rate of Karstic springs using Support Vector Machines",
+    "authors": "Goyal, M. K., Sharma, A., & Katsifarakis, K.",
+    "venue": "Hydrological Sciences Journal",
+    "year": 2017,
+    "type": "Article",
+    "doi": "10.1080/02626667.2017.1371847",
+    "tags": [
+      "Modeling"
+    ]
+  },
+  {
+    "title": "Projection of hydro-climatological changes over eastern Himalayan catchment by the evaluation of RegCM4 RCM and CMIP5 GCM models",
+    "authors": "Singh, V., Sharma, A., & Goyal, M. K.",
+    "venue": "Hydrology Research",
+    "year": 2017,
+    "type": "Article",
+    "doi": "10.2166/nh.2017.193",
+    "tags": [
+      "Climate Change"
+    ]
+  },
+  {
+    "title": "A comparison of three soft computing techniques, Bayesian regression, support vector regression, and wavelet regression, for monthly rainfall forecast",
+    "authors": "Sharma, A., & Goyal, M. K.",
+    "venue": "Journal of Intelligent Systems",
+    "year": 2016,
+    "type": "Article",
+    "doi": "10.1515/jisys-2016-0065",
+    "tags": [
+      "Modeling"
+    ]
+  },
+  {
+    "title": "A Fuzzy c-Means approach regionalization for analysis of meteorological drought homogeneous regions in Western India",
+    "authors": "Goyal, M. K., & Sharma, A.",
+    "venue": "Natural Hazards",
+    "year": 2016,
+    "type": "Article",
+    "doi": "10.1007/s11069-016-2520-9",
+    "tags": [
+      "Climate Change"
+    ]
+  },
+  {
+    "title": "Bayesian network for monthly rainfall forecast: a comparison of K2 and MCMC algorithm",
+    "authors": "Sharma, A., & Goyal, M. K.",
+    "venue": "International Journal of Computers and Applications",
+    "year": 2016,
+    "type": "Article",
+    "doi": "10.1080/1206212X.2016.1237131",
+    "tags": [
+      "Modeling"
+    ]
   }
 ]
