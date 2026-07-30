@@ -1,0 +1,33 @@
+{
+  "groups": [
+    {
+      "title": "Principal Investigator",
+      "members": [
+        {
+          "name": "Ashutosh Sharma",
+          "role": "Associate Professor",
+          "desc": "Department of Hydrology, IIT Roorkee. Large-sample hydrology, physics-informed & deep learning models, hydroclimatic extremes.",
+          "photo": "",
+          "links": [
+            { "label": "Scholar", "url": "https://scholar.google.com/" },
+            { "label": "Email", "url": "mailto:ashutosh.sharma@hy.iitr.ac.in" }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Research Scholars",
+      "members": [
+        { "name": "PhD Student", "role": "PhD Scholar", "desc": "Add research focus here.", "photo": "", "links": [] },
+        { "name": "PhD Student", "role": "PhD Scholar", "desc": "Add research focus here.", "photo": "", "links": [] },
+        { "name": "PhD Student", "role": "PhD Scholar", "desc": "Add research focus here.", "photo": "", "links": [] }
+      ]
+    },
+    {
+      "title": "Alumni",
+      "members": [
+        { "name": "Alumnus Name", "role": "Former MTech", "desc": "Now at — add current position.", "photo": "", "links": [] }
+      ]
+    }
+  ]
+}

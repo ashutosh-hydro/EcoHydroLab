@@ -1,0 +1,70 @@
+[
+  {
+    "title": "CAMELS-IND: Catchment Attributes and Meteorology for Large-sample Studies – India",
+    "authors": "Mangukiya, N. K., Kumar, K. B., Dey, P., Sharma, S., Bejagam, V., Mujumdar, P. P., & Sharma, A.",
+    "venue": "Earth System Science Data",
+    "year": 2025,
+    "type": "Dataset",
+    "featured": true,
+    "doi": "10.5194/essd-17-461-2025",
+    "tags": ["Large-sample", "Datasets"],
+    "links": [
+      { "label": "Data (Zenodo)", "url": "https://zenodo.org/records/13221214" }
+    ]
+  },
+  {
+    "title": "Enhancing Streamflow Prediction in Watersheds With Aggregated and Intermittent Observations",
+    "authors": "EcoHydroLab",
+    "venue": "Water Resources Research",
+    "year": 2025,
+    "type": "Article",
+    "featured": true,
+    "doi": "10.1029/2024WR037331",
+    "tags": ["Deep Learning", "Modeling"]
+  },
+  {
+    "title": "Ecosystem services in the Himalayas under climate change",
+    "authors": "EcoHydroLab",
+    "venue": "Environmental Research Letters",
+    "year": 2025,
+    "type": "Article",
+    "doi": "10.1088/1748-9326/ad9abc",
+    "tags": ["Ecohydrology", "Ecosystem Services"]
+  },
+  {
+    "title": "Deep learning-based Regional Flood Frequency Analysis",
+    "authors": "EcoHydroLab",
+    "venue": "Journal of Hydrology",
+    "year": 2024,
+    "type": "Article",
+    "doi": "10.1016/j.jhydrol.2024.130635",
+    "tags": ["Deep Learning", "Extremes"]
+  },
+  {
+    "title": "Vegetation Carbon Sequestration under Climate Change in India",
+    "authors": "EcoHydroLab",
+    "venue": "Science of the Total Environment",
+    "year": 2024,
+    "type": "Article",
+    "doi": "10.1016/j.scitotenv.2024.170166",
+    "tags": ["Ecohydrology", "Climate Change"]
+  },
+  {
+    "title": "Deep learning-based hydrological modeling for Indian watersheds",
+    "authors": "EcoHydroLab",
+    "venue": "Hydrological Processes",
+    "year": 2023,
+    "type": "Article",
+    "doi": "10.1002/hyp.14936",
+    "tags": ["Deep Learning", "Modeling"]
+  },
+  {
+    "title": "Ecohydrological Indicators (EHIs) in India",
+    "authors": "EcoHydroLab",
+    "venue": "Ecological Engineering",
+    "year": 2022,
+    "type": "Article",
+    "doi": "10.1016/j.ecoleng.2022.106841",
+    "tags": ["Ecohydrology"]
+  }
+]
