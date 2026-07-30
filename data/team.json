@@ -22,7 +22,8 @@
         { "name": "Ms. Nagashree GE (PMRF)", "role": "PhD Scholar", "desc": "Water-Energy- Food-Ecosystem Nexus, and Forest fire impact on terrestrial ecosystem.", "photo": "", "links": [] },
         { "name": "Mr. Prakhar Sharma", "role": "PhD Scholar", "desc": "Ecosystem Services, Ecohydrology, Water Accounting, and Ecohydrological modeling.", "photo": "", "links": [] },
         { "name": "Ms. Anusha Somisetty", "role": "PhD Scholar", "desc": "Climate change, Freshwater ecosystem services, Large-scale atmospheric circulation and teleconnection.", "photo": "", "links": [] },
-        { "name": "Ms. Akriti Singh", "role": "PhD Scholar", "desc": "Interaction between terrestrial ecosystem and groundwater, Terrestrial ecosystem dynamics, and Ecohydrological modelling.", "photo": "", "links": [] }
+        { "name": "Ms. Akriti Singh", "role": "PhD Scholar", "desc": "Interaction between terrestrial ecosystem and groundwater, Terrestrial ecosystem dynamics, and Ecohydrological modelling.", "photo": "", "links": [] },
+        { "name": "Mr. Gopeshwar Sahu", "role": "PhD Scholar", "desc": "ML & AI, Hydrology, and Rainfall-Runoff Modeling", "photo": "", "links": [] }
 
       ]
     },
