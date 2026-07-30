@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CAMELS-IND — EcoHydroLab</title>
+<meta name="description" content="CAMELS-IND: hydrometeorological time series and catchment attributes for 472 catchments in Peninsular India.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<header class="site-header">
+  <nav class="nav wrap" aria-label="Primary">
+    <a class="brand" href="index.html">
+      <svg class="mark" viewBox="0 0 40 40" fill="none" aria-hidden="true">
+        <circle cx="20" cy="20" r="19" stroke="#2a7f9e" stroke-width="2"/>
+        <path d="M6 24c4-6 8-6 12 0s10 6 16-2" stroke="#c98a3b" stroke-width="2" fill="none"/>
+        <path d="M6 30c4-6 8-6 12 0s10 6 16-2" stroke="#6fb3c9" stroke-width="1.5" fill="none"/>
+      </svg>
+      EcoHydroLab
+    </a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    <ul class="nav-links">
+      <li><a href="index.html" >Home</a></li>
+      <li><a href="research.html" >Research</a></li>
+      <li><a href="publications.html" >Publications</a></li>
+      <li><a href="datasets.html" >Datasets &amp; Code</a></li>
+      <li><a href="camels-ind.html" class="active">CAMELS-IND</a></li>
+      <li><a href="team.html" >Team</a></li>
+      <li><a href="news.html" >News</a></li>
+      <li><a href="join.html" >Join Us</a></li>
+    </ul>
+  </nav>
+</header>
+<section class="page-hero">
+  <div class="wrap">
+    <span class="eyebrow">Flagship Dataset</span>
+    <h1>CAMELS-IND</h1>
+    <p>Hydrometeorological time series and catchment attributes for 472 catchments in Peninsular India — supporting large-sample hydrology, model benchmarking, and climate-impact studies.</p>
+    <div class="hero-cta" style="margin-top:1.5rem">
+      <a class="btn" href="https://doi.org/10.5281/zenodo.14999580" target="_blank" rel="noopener" style="background:var(--sediment);border-color:var(--sediment);color:var(--ink)">Download data ↗</a>
+      <a class="btn btn--ghost" href="https://doi.org/10.5194/essd-17-461-2025" target="_blank" rel="noopener" style="color:var(--paper);border-color:rgba(255,255,255,.4)">Read the paper (ESSD) ↗</a>
+    </div>
+  </div>
+</section>
+
+<!-- Authors -->
+<section class="section section--tight">
+  <div class="wrap reveal">
+    <p style="max-width:none">Nikunj K. Mangukiya<sup>1</sup>, Kanneganti Bhargav Kumar<sup>2</sup>, Pankaj Dey<sup>1</sup>, Shailza Sharma<sup>2</sup>, Vijaykumar Bejagam<sup>1</sup>, Pradeep P. Mujumdar<sup>2,3</sup>, Ashutosh Sharma<sup>1,4,*</sup></p>
+    <p class="muted" style="font-size:.9rem;max-width:none">
+      <sup>1</sup> Department of Hydrology, IIT Roorkee, Uttarakhand, India &nbsp;·&nbsp;
+      <sup>2</sup> Department of Civil Engineering, IISc Bangalore, Karnataka, India &nbsp;·&nbsp;
+      <sup>3</sup> Interdisciplinary Centre for Water Research, IISc Bangalore &nbsp;·&nbsp;
+      <sup>4</sup> International Centre of Excellence for Dams, IIT Roorkee &nbsp;·&nbsp;
+      <sup>*</sup> Corresponding author
+    </p>
+  </div>
+</section>
+
+<!-- Key statistics -->
+<section class="section section--alt">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">At a glance</span>
+      <h2>Key statistics</h2>
+    </div>
+    <div class="grid grid-3 reveal">
+      <div class="card center"><div class="dataset-stat" style="justify-content:center;margin:0"><div><div class="num">8000+</div><div class="lbl">downloads</div></div></div></div>
+      <div class="card center"><div class="dataset-stat" style="justify-content:center;margin:0"><div><div class="num">472</div><div class="lbl">catchments covered</div></div></div></div>
+      <div class="card center"><div class="dataset-stat" style="justify-content:center;margin:0"><div><div class="num">19</div><div class="lbl">meteorological variables</div></div></div></div>
+      <div class="card center"><div class="dataset-stat" style="justify-content:center;margin:0"><div><div class="num">211</div><div class="lbl">catchment attributes</div></div></div></div>
+      <div class="card center"><div class="dataset-stat" style="justify-content:center;margin:0"><div><div class="num">40+</div><div class="lbl">years (1980–2020)</div></div></div></div>
+      <div class="card center"><div class="dataset-stat" style="justify-content:center;margin:0"><div><div class="num">30+</div><div class="lbl">publications used data</div></div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- About CAMELS initiative -->
+<section class="section">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Background</span>
+      <h2>About the CAMELS initiative</h2>
+      <p class="muted" style="font-size:1rem">Catchment Attributes and Meteorology for Large-sample Studies</p>
+    </div>
+    <div class="reveal">
+      <p class="muted">CAMELS hydro-meteorological datasets are nationwide compilations of hundreds of catchments — their physical attributes, records of drainage dynamics, and corresponding meteorological time series. These datasets have reshaped how hydrological predictions, catchment classification, and analyses of change are carried out. They unify approaches to identifying hydrological signatures, serve as benchmarks for model development across settings, and have helped give rise to machine learning in water management. CAMELS datasets are a testament to open-data initiatives, showing how science, education, and management at regional to global scales benefit from open data.</p>
+      <p class="pub-links"><a href="https://essd.copernicus.org/articles/collection6.html" target="_blank" rel="noopener">CAMELS Special Collection in ESSD ↗</a></p>
+    </div>
+  </div>
+</section>
+
+<!-- About CAMELS-IND -->
+<section class="section section--alt">
+  <div class="wrap">
+    <div class="dataset-feature reveal">
+      <div>
+        <span class="eyebrow">The dataset</span>
+        <h2>About CAMELS-IND</h2>
+        <p class="muted">CAMELS-IND is a hydrometeorological dataset for 472 catchments in Peninsular India, aimed at supporting large-scale hydrological studies. It provides time series of 19 meteorological variables for 1980–2020 and 211 catchment attributes. Of the 472 catchments, 242 have observed streamflow for over 30% of the period. It also incorporates human-influence factors such as dams, population density, and land-use change. Additionally, CAMELS-IND offers streamflow predictions from an LSTM-based hydrological model, enabling gap-filling or benchmarking of new models. The dataset is designed for studies on hydrology, water management, and climate-change impacts in India.</p>
+      </div>
+      <div class="card" style="padding:0;overflow:hidden">
+        <svg viewBox="0 0 500 340" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Stylised map of 472 catchments across Peninsular India"><rect width="500" height="340" fill="#dce6ea"/><path d="M180 30 L250 40 L300 90 L330 160 L300 250 L250 300 L200 280 L160 210 L150 120 Z" fill="#c7d8de" stroke="#2a7f9e" stroke-width="1.5"/><g fill="#2a7f9e" opacity="0.55"><circle cx="210" cy="90" r="4"/><circle cx="240" cy="120" r="4"/><circle cx="200" cy="140" r="4"/><circle cx="260" cy="160" r="4"/><circle cx="220" cy="180" r="4"/><circle cx="250" cy="210" r="4"/><circle cx="200" cy="220" r="4"/><circle cx="230" cy="250" r="4"/><circle cx="185" cy="170" r="4"/><circle cx="275" cy="130" r="4"/><circle cx="215" cy="250" r="4"/><circle cx="255" cy="90" r="4"/></g><path d="M240 60 C 235 120, 250 180, 225 260" fill="none" stroke="#c98a3b" stroke-width="2"/></svg>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Key features -->
+<section class="section">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">What's inside</span>
+      <h2>Key features</h2>
+    </div>
+    <div class="grid grid-2">
+      <div class="card research-card reveal"><h3>Catchment coverage</h3><p>472 catchments in Peninsular India, including 242 with observed streamflow for over 30% of the 1980–2020 period.</p></div>
+      <div class="card research-card reveal"><h3>Meteorological data</h3><p>19 variables — precipitation, temperature, radiation flux, wind, humidity, evapotranspiration, and soil moisture.</p></div>
+      <div class="card research-card reveal"><h3>Catchment attributes</h3><p>211 attributes spanning topography, hydroclimate, land cover, soil, geology, and human influences.</p></div>
+      <div class="card research-card reveal"><h3>Streamflow data</h3><p>Observed streamflow plus LSTM-predicted streamflow for all catchments, enabling gap-filling and benchmarking.</p></div>
+      <div class="card research-card reveal"><h3>Global comparability</h3><p>Follows CAMELS standards used in the USA, Chile, Brazil and elsewhere for international comparison.</p></div>
+      <div class="card research-card reveal"><h3>Human impact</h3><p>Data on dams, population density, and land-cover change for studying anthropogenic influence on hydrology.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- IAHS side event -->
+<section class="section section--alt">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Outreach</span>
+      <h2>CAMELS-IND side event at IAHS 2025</h2>
+      <p class="muted">A workshop, "Introducing CAMELS-IND," held during the XIIth Scientific Assembly of IAHS at IIT Roorkee — an overview of the CAMELS initiative, the data structures, and hands-on demonstrations.</p>
+    </div>
+    <div class="grid grid-2 reveal">
+      <div class="card"><h4>Presentations</h4><p class="muted">1 — Overview of the CAMELS initiative and CAMELS-IND data.<br>2 — Key features of the CAMELS-IND data.</p></div>
+      <div class="card"><h4>Demonstrations</h4><p class="muted">1 — Browsing the CAMELS-IND data.<br>2 — Extracting flood hydrographs using CAMELS-IND.<br>3 — Large-sample streamflow prediction using LSTM.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- Publications using CAMELS-IND -->
+<section class="section">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Impact</span>
+      <h2>Publications using CAMELS-IND</h2>
+      <p class="muted">A selection of studies that have used the dataset. <a href="https://scholar.google.co.in/scholar?oi=bibs&hl=en&cites=7447677849803945098" target="_blank" rel="noopener">See all citing works on Google Scholar ↗</a></p>
+    </div>
+    <div class="reveal" id="camels-pubs"></div>
+  </div>
+</section>
+
+<!-- Cite + contribute + acknowledgments -->
+<section class="section section--dark">
+  <div class="wrap">
+    <div class="reveal" style="margin-bottom:2.5rem">
+      <span class="eyebrow">How to cite</span>
+      <h2>Citation</h2>
+      <p>Mangukiya, N. K., Kumar, K. B., Dey, P., Sharma, S., Bejagam, V., Mujumdar, P. P., and Sharma, A.: CAMELS-IND: hydrometeorological time series and catchment attributes for 472 catchments in Peninsular India, <em>Earth Syst. Sci. Data</em>, 17, 461–491, 2025.</p>
+      <p class="pub-links"><a href="https://doi.org/10.5194/essd-17-461-2025" target="_blank" rel="noopener">https://doi.org/10.5194/essd-17-461-2025 ↗</a></p>
+    </div>
+    <div class="grid grid-2">
+      <div class="reveal">
+        <span class="eyebrow">Get involved</span>
+        <h3 style="color:var(--paper)">Contribute to CAMELS-IND</h3>
+        <p>If you work with a dataset covering Indian catchments and would like to contribute catchment averages, please get in touch. We are committed to identifying and correcting errors — if you encounter any unrealistic or suspicious values, let us know.</p>
+        <p class="pub-links">
+          <a href="mailto:nikk.mangukiya@gmail.com">Nikunj K. Mangukiya</a>
+          <a href="mailto:ashutosh.sharma@hy.iitr.ac.in">Ashutosh Sharma</a>
+        </p>
+      </div>
+      <div class="reveal">
+        <span class="eyebrow">Access</span>
+        <h3 style="color:var(--paper)">Download &amp; links</h3>
+        <p class="pub-links" style="flex-direction:column;gap:.6rem;align-items:flex-start">
+          <a href="https://doi.org/10.5281/zenodo.14999580" target="_blank" rel="noopener">Dataset on Zenodo ↗</a>
+          <a href="https://doi.org/10.5194/essd-17-461-2025" target="_blank" rel="noopener">ESSD paper ↗</a>
+          <a href="https://essd.copernicus.org/articles/collection6.html" target="_blank" rel="noopener">CAMELS Special Collection ↗</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Acknowledgments + disclaimer -->
+<section class="section section--tight">
+  <div class="wrap reveal">
+    <h4>Acknowledgments</h4>
+    <p class="muted" style="font-size:.9rem">The authors gratefully acknowledge the Central Water Commission (CWC), the National Water Informatics Centre (NWIC), and the Ministry of Jal Shakti for streamflow data via India-WRIS; the India Meteorological Department (IMD) for gridded rainfall and temperature data; and the National Centre for Medium Range Weather Forecasting (NCMRWF) for the IMDAA reanalysis, produced under collaboration between the UK Met Office, NCMRWF, and IMD with support from the Ministry of Earth Sciences under the National Monsoon Mission. Numerous other publicly available datasets were used in compiling catchment attributes and meteorological forcings, with acknowledgment and citation where applicable.</p>
+    <h4 style="margin-top:1.5rem">Disclaimer</h4>
+    <p class="muted" style="font-size:.9rem">The CAMELS-IND dataset is openly accessible for academic and research purposes. While efforts have been made to ensure accuracy, the authors accept no responsibility for errors, omissions, or misuse. Users must cite the paper above and acknowledge that all interpretations and conclusions are their own. The dataset is provided "as is" without warranties; users are advised to verify the data before use.</p>
+  </div>
+</section>
+
+<script>
+  // Render CAMELS-IND publications from a small inline list
+  (function () {
+    var pubs = [
+      { n: "Gudmundsson, L., Brunner, M. I., Döll, P. et al. (2025). Past and future change in global river flows. <em>Nature Reviews Earth &amp; Environment</em>.", doi: "10.1038/s43017-025-00745-z" },
+      { n: "Sahu, G., Mangukiya, N. K., &amp; Sharma, A. (2025). Does MC-LSTM model improve the reliability of streamflow prediction in human-influenced watersheds? <em>Journal of Hydrology</em>, 134711.", doi: "10.1016/j.jhydrol.2025.134711" },
+      { n: "Singh, A., &amp; Sharma, A. (2025). Agricultural catchments exhibit enhanced climate and drought resilience compared to forested catchments in Peninsular India. <em>Journal of Hydrology</em>, 134618.", doi: "10.1016/j.jhydrol.2025.134618" },
+      { n: "Mangukiya, N. K., &amp; Sharma, A. (2025). Integrating Reservoir Dynamics into Differentiable Process-Based Hydrological Model for Enhanced Streamflow Estimation. <em>Water Resources Research</em>, 61(7), e2025WR040268.", doi: "10.1029/2025WR040268" },
+      { n: "Ambika, A. K., Tayal, K., Mishra, V., &amp; Lu, D. (2025). Novel deep learning transformer model for short to sub-seasonal streamflow forecast. <em>Geophysical Research Letters</em>, 52(14), e2025GL116707.", doi: "" },
+      { n: "Kalura, P., Pandey, A., Chowdary, V. M., &amp; Dayal, D. (2025). A TOPSIS-Based Multicriteria Assessment of Hydrologic Model Calibration Using Satellite-Derived Evapotranspiration and Streamflow Data. <em>Hydrological Processes</em>, 39(7), e70191.", doi: "" },
+      { n: "Mangukiya, N. K., &amp; Sharma, A. (2025). Deep learning-based approach for enhancing streamflow prediction in watersheds with aggregated and intermittent observations. <em>Water Resources Research</em>, 61(1), e2024WR037331.", doi: "10.1029/2024WR037331" },
+      { n: "Kumar, K. B., Sharma, S., Das Bhowmik, R., &amp; Mujumdar, P. P. (2025). Spatial synchronization of river floods growing beyond the basin boundaries in Peninsular India. <em>Scientific Reports</em>, 15, 18160.", doi: "10.1038/s41598-025-02922-y" },
+      { n: "Mangukiya, N. K., &amp; Sharma, A. (2024). Alternate pathway for regional flood frequency analysis in data-sparse region. <em>Journal of Hydrology</em>, 629, 130635.", doi: "10.1016/j.jhydrol.2024.130635" },
+      { n: "Mangukiya, N. K., Kushwaha, S., &amp; Sharma, A. (2024). A novel multi-model ensemble framework for fluvial flood inundation mapping. <em>Environmental Modelling &amp; Software</em>, 180, 106163.", doi: "10.1016/j.envsoft.2024.106163" },
+      { n: "Mangukiya, N. K., Sharma, A., &amp; Shen, C. (2023). How to enhance hydrological predictions in hydrologically distinct watersheds of the Indian subcontinent? <em>Hydrological Processes</em>, 37(7), e14936.", doi: "10.1002/hyp.14936" },
+      { n: "Abbas, A., Yang, Y., Pan, M., et al. (2025). Comprehensive Global Assessment of 23 Gridded Precipitation Datasets Across 16,295 Catchments Using Hydrological Modeling. <em>EGUsphere</em> [preprint].", doi: "10.5194/egusphere-2024-4194" }
+    ];
+    var html = pubs.map(function (p) {
+      var link = p.doi ? ' <a href="https://doi.org/' + p.doi + '" target="_blank" rel="noopener" style="font-family:var(--mono);font-size:.74rem">DOI ↗</a>' : '';
+      return '<div class="pub"><div><span class="pub-badge">Cites</span></div><div><div class="pub-meta" style="font-size:.95rem;color:var(--ink)">' + p.n + link + '</div></div></div>';
+    }).join('');
+    document.getElementById('camels-pubs').innerHTML = html;
+  })();
+</script>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <h4>EcoHydroLab</h4>
+        <p style="color:#c3cdd1">Multiscale Ecohydrological Processes, Interactions and Disturbances. Department of Hydrology, IIT Roorkee, Uttarakhand, India.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul class="footer-links">
+          <li><a href="research.html">Research</a></li>
+          <li><a href="publications.html">Publications</a></li>
+          <li><a href="datasets.html">Datasets &amp; Code</a></li>
+          <li><a href="team.html">Team</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Connect</h4>
+        <ul class="footer-links">
+          <li><a href="mailto:ashutosh.sharma@hy.iitr.ac.in">Email</a></li>
+          <li><a href="https://scholar.google.com/" target="_blank" rel="noopener">Google Scholar</a></li>
+          <li><a href="https://github.com/" target="_blank" rel="noopener">GitHub</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year"></span> EcoHydroLab, IIT Roorkee</span>
+      <span>Department of Hydrology</span>
+    </div>
+  </div>
+</footer>
+<script src="assets/js/main.js"></script>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
