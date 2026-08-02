@@ -34,8 +34,8 @@
     {
       "title": "Alumni",
       "members": [
-        { "name": "Dr. Vijaykumar Bejagam (PMRF)", "role": "Former PhD Student", "desc": "Thesis title: Multi-scale Assessment of Indian Terrestrial Ecosystems under Climate Change.", "photo": "assets/img/vijaykumar_bejagam.png", "links": [] },
-        { "name": "Dr. Nikunj K. Mangukiya", "role": "Former PhD Student", "desc": "Thesis title: Deep Learning-based Models for Hydrological Predictions in Distinct Indian Watersheds.", "photo": "assets/img/nikunj_mangukiya.png", "links": [] }
+        { "name": "Dr. Vijaykumar Bejagam (PMRF)", "role": "Former PhD Student", "desc": "Thesis title: Multi-scale Assessment of Indian Terrestrial Ecosystems under Climate Change.", "photo": "assets/img/vijaykumar_bejagam.png", "links": [ { "label": "Personal Webpage", "url": "https://sites.google.com/view/bejagam-vijaykumar/" }] },
+        { "name": "Dr. Nikunj K. Mangukiya", "role": "Former PhD Student", "desc": "Thesis title: Deep Learning-based Models for Hydrological Predictions in Distinct Indian Watersheds.", "photo": "assets/img/nikunj_mangukiya.png", "links": [{ "label": "Personal Webpage", "url": "https://sites.google.com/view/nikunj-mangukiya/" }] }
       ]
     }
   ]
