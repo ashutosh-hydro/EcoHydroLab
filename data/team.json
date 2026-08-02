@@ -33,8 +33,8 @@
       "title": "Research Scholars",
       "members": [
         {
-          "name": "Pooja Patle",
-          "role": "PMRF PhD Scholar",
+          "name": "Pooja Patle (PMRF)",
+          "role": "PhD Scholar",
           "desc": "Unravelling the present and future water resources availability in complex Indian river basin through a coupled hydrological modelling-water accounting framework.",
           "photo": "assets//img//pooja_patle.png",
           "links": [
@@ -136,7 +136,7 @@
       "members": [
         {
           "name": "Dr. Vijaykumar Bejagam (PMRF)",
-          "role": "Former PhD Student",
+          "role": "Ph.D. · 2025",
           "desc": "Thesis title: Multi-scale Assessment of Indian Terrestrial Ecosystems under Climate Change.",
           "photo": "assets//img//vijaykumar_bejagam.png",
           "links": [
@@ -148,7 +148,7 @@
         },
         {
           "name": "Dr. Nikunj K. Mangukiya",
-          "role": "Former PhD Student",
+          "role": "Ph.D. · 2025",
           "desc": "Thesis title: Deep Learning-based Models for Hydrological Predictions in Distinct Indian Watersheds.",
           "photo": "assets//img//nikunj_mangukiya.png",
           "links": [
