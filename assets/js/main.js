@@ -118,12 +118,28 @@ async function renderTeam(mountId) {
   const data = result.data;
 
   const groups = data.groups || [];
-  mount.innerHTML = groups.map(g => `
-    <h2 class="team-group-title">${g.title}</h2>
+  let lastSection = null;
+  mount.innerHTML = groups.map(g => {
+    let heading = '';
+    if (g.section) {
+      // Parent section heading — printed once, when it first appears
+      if (g.section !== lastSection) {
+        heading += `<h2 class="team-group-title">${g.section}</h2>`;
+        lastSection = g.section;
+      }
+      // Subsection label under the parent
+      heading += `<h3 class="team-subgroup-title">${g.title}</h3>`;
+    } else {
+      heading = `<h2 class="team-group-title">${g.title}</h2>`;
+      lastSection = null;
+    }
+    return `
+    ${heading}
     <div class="grid grid-4">
       ${g.members.map(personHTML).join('')}
     </div>
-  `).join('');
+  `;
+  }).join('');
 
   function personHTML(m) {
     const initials = m.name.split(' ').map(s => s[0]).slice(0, 2).join('');

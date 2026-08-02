@@ -203,6 +203,7 @@ p { margin-block: 0.6em; max-width: 68ch; }
 .person .socials { margin-top: .6rem; display: flex; gap: .7rem; justify-content: center; }
 .person .socials a { font-size: .8rem; font-family: var(--mono); }
 .team-group-title { margin: 2.5rem 0 1.5rem; }
+.team-subgroup-title { font-size: 1.1rem; color: var(--river); margin: 1.8rem 0 1.2rem; padding-bottom: .4rem; border-bottom: 1px solid var(--line); font-family: var(--sans); font-weight: 600; letter-spacing: .01em; }
 
 /* ---------- News ---------- */
 .news-item { display: grid; grid-template-columns: 130px 1fr; gap: 1.2rem; padding: 1.1rem 0; border-bottom: 1px solid var(--line); }
