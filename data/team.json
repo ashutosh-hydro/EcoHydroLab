@@ -20,8 +20,20 @@
     {
       "title": "Research Scholars",
       "members": [
-        { "name": "Pooja Patle", "role": "PMRF PhD Scholar", "desc": "Unravelling the present and future water resources availability in complex Indian river basin through a coupled hydrological modelling-water accounting framework.", "photo": "assets//img//pooja_patle.png", "links": [{ "label": "Google Scholar", "url": "https://scholar.google.co.in/citations?user=uRnqGFAAAAAJ" }] },
-        { "name": "Nagashree GE (PMRF)", "role": "PhD Scholar", "desc": "Development of a multi-dimensional nexus framework for addressing water scarcity at basin scale.", "photo": "assets//img//nagashree_ge.png", "links": [{ "label": "Google Scholar", "url": "https://scholar.google.co.in/citations?hl=en&user=1YlgFnEAAAAJ" }] },
+        {   
+            "name": "Pooja Patle", 
+            "role": "PMRF PhD Scholar", 
+            "desc": "Unravelling the present and future water resources availability in complex Indian river basin through a coupled hydrological modelling-water accounting framework.",
+            "photo": "assets//img//pooja_patle.png", 
+            "links": [{ "label": "Google Scholar", "url": "https://scholar.google.co.in/citations?user=uRnqGFAAAAAJ" }] 
+        },
+        {   
+            "name": "Nagashree GE (PMRF)", 
+            "role": "PhD Scholar", 
+            "desc": "Development of a multi-dimensional nexus framework for addressing water scarcity at basin scale.", 
+            "photo": "assets//img//nagashree_ge.png", 
+            "links": [{ "label": "Google Scholar", "url": "https://scholar.google.co.in/citations?hl=en&user=1YlgFnEAAAAJ" }] 
+        },
         { "name": "Prakhar Sharma", "role": "PhD Scholar", "desc": "Assessment of Freshwater Ecosystem Services and determination of Ecological Functional Zones in distinct Himalayan catchments (Co-supervisor: Prof. Sumit Sen).", "photo": "assets//img//prakhar_sharma.png", "links": [{ "label": "Google Scholar", "url": "https://scholar.google.co.in/citations?hl=en&user=ZxBVXeEAAAAJ" }] },
         { "name": "Anusha Somisetty", "role": "PhD Scholar", "desc": "Hydrological water budgeting and assessment of climate extremes in Himalayan Catchments (Co-supervisor: Dr. Vishal Singh, NIH Roorkee).", "photo": "assets//img//anusha_somisetty.png", "links": [] },
         { "name": "Akriti Singh", "role": "PhD Scholar", "desc": "Comparative assessment of Hydrological Resilience of Catchments in Peninsular India Considering Adaptation Scenarios.", "photo": "assets//img//akriti_singh.png", "links": [{ "label": "Google Scholar", "url": "https://scholar.google.co.in/citations?hl=en&user=HEVmJcMAAAAJ" }] },
@@ -36,9 +48,164 @@
     {
       "title": "Alumni",
       "members": [
-        { "name": "Dr. Vijaykumar Bejagam (PMRF)", "role": "Former PhD Student", "desc": "Thesis title: Multi-scale Assessment of Indian Terrestrial Ecosystems under Climate Change.", "photo": "assets//img//vijaykumar_bejagam.png", "links": [ { "label": "Personal Webpage", "url": "https://sites.google.com/view/bejagam-vijaykumar/" }] },
-        { "name": "Dr. Nikunj K. Mangukiya", "role": "Former PhD Student", "desc": "Thesis title: Deep Learning-based Models for Hydrological Predictions in Distinct Indian Watersheds.", "photo": "assets//img//nikunj_mangukiya.png", "links": [{ "label": "Personal Webpage", "url": "https://sites.google.com/view/nikunj-mangukiya/" }] }
+        { 
+            "name": "Dr. Vijaykumar Bejagam (PMRF)", 
+            "role": "Former PhD Student", "desc": "Thesis title: Multi-scale Assessment of Indian Terrestrial Ecosystems under Climate Change.",
+            "photo": "assets//img//vijaykumar_bejagam.png", 
+            "links": [ { "label": "Personal Webpage", "url": "https://sites.google.com/view/bejagam-vijaykumar/" }] 
+        },
+        { 
+            "name": "Dr. Nikunj K. Mangukiya", "role": "Former PhD Student", 
+            "desc": "Thesis title: Deep Learning-based Models for Hydrological Predictions in Distinct Indian Watersheds.", 
+            "photo": "assets//img//nikunj_mangukiya.png", 
+            "links": [{ "label": "Personal Webpage", "url": "https://sites.google.com/view/nikunj-mangukiya/" }] 
+        }
       ]
-    }
+    },
+    {
+      "title": "M.Tech Students",
+      "members": [
+        {
+          "name": "Apurv Vishwakarma",
+          "role": "M.Tech · 2022",
+          "desc": "\"Comparison of CMIP5 and CMIP6 GCMs to understand the changes in historical and future projections of precipitation and temperature over India\"",
+          "photo": "",
+          "links": []
+        },
+        {
+          "name": "Vivek Kumar",
+          "role": "M.Tech · 2022",
+          "desc": "\"Understanding the Role of Land Use-Land Cover in Runoff Generation in the Upper Kosi River Catchment using SWAT Model\" (Main supervisor: Prof. Sumit Sen)",
+          "photo": "",
+          "links": []
+        },
+        {
+          "name": "Tapobeeva Sahoo",
+          "role": "M.Tech · 2023",
+          "desc": "\"Assessment of Compound Extremes in India using Statistical Methods and their Impact on Terrestrial Ecosystem\"",
+          "photo": "",
+          "links": []
+        },
+        {
+          "name": "Akriti Singh",
+          "role": "M.Tech · 2023",
+          "desc": "\"Examining the role of groundwater in the spatio-temporal variation of water use efficiency of terrestrial ecosystem in India\"",
+          "photo": "",
+          "links": []
+        },
+        {
+          "name": "Siddig Mohammed Ali Berama",
+          "role": "M.Tech · 2023",
+          "desc": "\"Assessment of Impacts of Climate Change and Land Use Land Cover Change on the Hydrological Water Balance in the Blue Nile Basin\" (Co-supervisor: Prof. N.K. Goel)",
+          "photo": "",
+          "links": []
+        },
+        {
+          "name": "Lammi Niang",
+          "role": "M.Tech · 2023",
+          "desc": "\"Assessment of the impacts of LULC and climate change on the magnitude of runoff peak at the outlet of the Leshka (Stage-I) catchment\"",
+          "photo": "",
+          "links": []
+        },
+        {
+          "name": "Shivani Prashar",
+          "role": "M.Tech · 2024",
+          "desc": "\"Development and application of a coupled System Dynamic-Hydrological modelling framework: A case study of Punjab's groundwater depletion\"",
+          "photo": "",
+          "links": []
+        },
+        {
+          "name": "Sagar Gupta",
+          "role": "M.Tech · 2024",
+          "desc": "\"Uncertainty Analysis of the Hydrological Modeling in Himalayan Catchment: A case study of Alaknanda River Basin\"",
+          "photo": "",
+          "links": []
+        },
+        {
+          "name": "Supriya Thokchom",
+          "role": "M.Tech · 2024",
+          "desc": "\"Assessment of Urban Ecosystem Services and their Deficit in Indian Cities\"",
+          "photo": "",
+          "links": []
+        },
+        {
+          "name": "Bhagyashree Sonowal",
+          "role": "M.Tech · 2024",
+          "desc": "\"Development of a GEE-based Flood Inundation Mapping Framework\"",
+          "photo": "",
+          "links": []
+        },
+        {
+          "name": "Ayanava Poddar",
+          "role": "M.Tech · 2025",
+          "desc": "\"Ecohydrological assessment of a forested catchment in Western Ghats using RHESSys\"",
+          "photo": "",
+          "links": []
+        },
+        {
+          "name": "Dibya Ranjan Nayak",
+          "role": "M.Tech · 2025",
+          "desc": "\"Impact of Climate Variability on Rainfall to Water Balance and Agricultural Productivity in the Upper Beas Basin\"",
+          "photo": "",
+          "links": []
+        },
+        {
+          "name": "Rakshita N.",
+          "role": "M.Tech · 2025",
+          "desc": "\"Assessment and Modelling of Hydrological Alterations in the Kaliyar River Basin, Kerala\"",
+          "photo": "",
+          "links": []
+        },
+        {
+          "name": "Sweta Dash",
+          "role": "M.Tech · 2025",
+          "desc": "\"Evaluating the NCMRWF weather forecasts for inflow forecasting of Rengali Dam\"",
+          "photo": "",
+          "links": []
+        },
+        {
+          "name": "Ugyen Choda",
+          "role": "M.Tech · 2025",
+          "desc": "\"Dam Breach Modelling and Flood Inundation Mapping for Emergency Action Planning: A Case Study of Mangdechhu Hydropower Dam, Bhutan\"",
+          "photo": "",
+          "links": []
+        },
+        {
+          "name": "Arpit Kumar Verma",
+          "role": "M.Tech · 2026",
+          "desc": "\"Development of a Deep Learning-Based Framework for Simulation of Different Streamflow Components for Indian River Basins\"",
+          "photo": "",
+          "links": []
+        },
+        {
+          "name": "Nilesh Kumar",
+          "role": "M.Tech · 2026",
+          "desc": "\"Enhanced Streamflow Forecasting in Upper Narmada River Basin using NCMRWF Weather Forecasts and HEC-HMS\"",
+          "photo": "",
+          "links": []
+        },
+        {
+          "name": "Manoj Pokharel",
+          "role": "M.Tech · 2026",
+          "desc": "\"Flood Hazard and Risk Mapping in the Lower Reach of Koshi River Basin\"",
+          "photo": "",
+          "links": []
+        },
+        {
+          "name": "Brijesh Meena",
+          "role": "M.Tech · 2026",
+          "desc": "\"Dam Break Modelling with Uncertainty and Sensitivity Analysis by Using HEC-RAS for Sankosh Hydroelectric Project, Bhutan\"",
+          "photo": "",
+          "links": []
+        },
+        {
+          "name": "Pura Tupe",
+          "role": "M.Tech · 2026",
+          "desc": "\"Impact of Dam Break: A Case Study of Lower Subansiri Hydro-electric Project in Arunachal Pradesh\"",
+          "photo": "",
+          "links": []
+        }
+      ]
+    },
   ]
 }
