@@ -34,15 +34,68 @@
             "photo": "assets//img//nagashree_ge.png", 
             "links": [{ "label": "Google Scholar", "url": "https://scholar.google.co.in/citations?hl=en&user=1YlgFnEAAAAJ" }] 
         },
-        { "name": "Prakhar Sharma", "role": "PhD Scholar", "desc": "Assessment of Freshwater Ecosystem Services and determination of Ecological Functional Zones in distinct Himalayan catchments (Co-supervisor: Prof. Sumit Sen).", "photo": "assets//img//prakhar_sharma.png", "links": [{ "label": "Google Scholar", "url": "https://scholar.google.co.in/citations?hl=en&user=ZxBVXeEAAAAJ" }] },
-        { "name": "Anusha Somisetty", "role": "PhD Scholar", "desc": "Hydrological water budgeting and assessment of climate extremes in Himalayan Catchments (Co-supervisor: Dr. Vishal Singh, NIH Roorkee).", "photo": "assets//img//anusha_somisetty.png", "links": [] },
-        { "name": "Akriti Singh", "role": "PhD Scholar", "desc": "Comparative assessment of Hydrological Resilience of Catchments in Peninsular India Considering Adaptation Scenarios.", "photo": "assets//img//akriti_singh.png", "links": [{ "label": "Google Scholar", "url": "https://scholar.google.co.in/citations?hl=en&user=HEVmJcMAAAAJ" }] },
-        { "name": "Gopeshwar Sahu", "role": "PhD Scholar", "desc": "Physics-informed machine learning for hydrological modelling for human-influenced catchments.", "photo": "assets//img//gopeshwar_sahu.png", "links": [] },
-        { "name": "Truptimayee Ghosh", "role": "PhD Scholar", "desc": "Improving vegetation representation in hydrological modelling.", "photo": "", "links": [] },
-        { "name": "Varun Bhasin", "role": "PhD Scholar", "desc": "AI-Integrated Hydrological and Flood Risk Modelling for Dam Safety (Co-supervisor: Prof. NK Goel).", "photo": "", "links": [] },
-        { "name": "Sakshi Tripathi", "role": "PhD Scholar", "desc": "Extraction of snow-related Essential Climate Variables (ECVs) for Indian North Western Himalayas (Co-supervisor: Dr. Praveen Thakur, IIRS Dehradun).", "photo": "", "links": [] },
-        { "name": "Rudraksh Singh Tomar", "role": "PhD Scholar", "desc": "AI-integrated streamflow forecasting in Narmada basin.", "photo": "", "links": [] },
-        { "name": "Santosh Pathak", "role": "PhD Scholar", "desc": "Large-sample hydrology.", "photo": "", "links": [] }
+        { 
+            "name": "Prakhar Sharma", 
+            "role": "PhD Scholar", 
+            "desc": "Assessment of Freshwater Ecosystem Services and determination of Ecological Functional Zones in distinct Himalayan catchments (Co-supervisor: Prof. Sumit Sen).", 
+            "photo": "assets//img//prakhar_sharma.png", 
+            "links": [{ "label": "Google Scholar", "url": "https://scholar.google.co.in/citations?hl=en&user=ZxBVXeEAAAAJ" }] 
+        },
+        { 
+            "name": "Anusha Somisetty", "role": "PhD Scholar", 
+            "desc": "Hydrological water budgeting and assessment of climate extremes in Himalayan Catchments (Co-supervisor: Dr. Vishal Singh, NIH Roorkee).", 
+            "photo": "assets//img//anusha_somisetty.png", 
+            "links": [] 
+        },
+        { 
+            "name": "Akriti Singh", 
+            "role": "PhD Scholar", 
+            "desc": "Comparative assessment of Hydrological Resilience of Catchments in Peninsular India Considering Adaptation Scenarios.", 
+            "photo": "assets//img//akriti_singh.png", 
+            "links": [{ "label": "Google Scholar", "url": "https://scholar.google.co.in/citations?hl=en&user=HEVmJcMAAAAJ" }] 
+        },
+        { 
+            "name": "Gopeshwar Sahu", 
+            "role": "PhD Scholar", 
+            "desc": "Physics-informed machine learning for hydrological modelling for human-influenced catchments.", 
+            "photo": "assets//img//gopeshwar_sahu.png", 
+            "links": [] 
+        },
+        { 
+            "name": "Truptimayee Ghosh", 
+            "role": "PhD Scholar", 
+            "desc": "Improving vegetation representation in hydrological modelling.", 
+            "photo": "", 
+            "links": [] 
+        },
+        { 
+            "name": "Varun Bhasin", 
+            "role": "PhD Scholar", 
+            "desc": "AI-Integrated Hydrological and Flood Risk Modelling for Dam Safety (Co-supervisor: Prof. NK Goel).", 
+            "photo": "", 
+            "links": [] 
+        },
+        { 
+            "name": "Sakshi Tripathi", 
+            "role": "PhD Scholar", 
+            "desc": "Extraction of snow-related Essential Climate Variables (ECVs) for Indian North Western Himalayas (Co-supervisor: Dr. Praveen Thakur, IIRS Dehradun).", 
+            "photo": "", 
+            "links": [] 
+        },
+        { 
+            "name": "Rudraksh Singh Tomar", 
+            "role": "PhD Scholar", 
+            "desc": "AI-integrated streamflow forecasting in Narmada basin.", 
+            "photo": "", 
+            "links": [] 
+        },
+        { 
+            "name": "Santosh Pathak", 
+            "role": "PhD Scholar", 
+            "desc": "Large-sample hydrology.", 
+            "photo": "", 
+            "links": [] 
+        }
       ]
     },
     {
