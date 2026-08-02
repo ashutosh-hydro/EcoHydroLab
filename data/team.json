@@ -18,12 +18,12 @@
     {
       "title": "Research Scholars",
       "members": [
-        { "name": "Pooja Patle", "role": "PMRF PhD Scholar", "desc": "Unravelling the present and future water resources availability in complex Indian river basin through a coupled hydrological modelling-water accounting framework.", "photo": "", "links": [] },
-        { "name": "Nagashree GE (PMRF)", "role": "PhD Scholar", "desc": "Development of a multi-dimensional nexus framework for addressing water scarcity at basin scale.", "photo": "", "links": [] },
-        { "name": "Prakhar Sharma", "role": "PhD Scholar", "desc": "Assessment of Freshwater Ecosystem Services and determination of Ecological Functional Zones in distinct Himalayan catchments (Co-supervisor: Prof. Sumit Sen).", "photo": "", "links": [] },
-        { "name": "Anusha Somisetty", "role": "PhD Scholar", "desc": "Hydrological water budgeting and assessment of climate extremes in Himalayan Catchments (Co-supervisor: Dr. Vishal Singh, NIH Roorkee).", "photo": "", "links": [] },
-        { "name": "Akriti Singh", "role": "PhD Scholar", "desc": "Comparative assessment of Hydrological Resilience of Catchments in Peninsular India Considering Adaptation Scenarios.", "photo": "", "links": [] },
-        { "name": "Gopeshwar Sahu", "role": "PhD Scholar", "desc": "Physics-informed machine learning for hydrological modelling for human-influenced catchments.", "photo": "", "links": [] },
+        { "name": "Pooja Patle", "role": "PMRF PhD Scholar", "desc": "Unravelling the present and future water resources availability in complex Indian river basin through a coupled hydrological modelling-water accounting framework.", "photo": "assets/img/pooja_patle.png", "links": [] },
+        { "name": "Nagashree GE (PMRF)", "role": "PhD Scholar", "desc": "Development of a multi-dimensional nexus framework for addressing water scarcity at basin scale.", "photo": "assets/img/nagashree_ge.png", "links": [] },
+        { "name": "Prakhar Sharma", "role": "PhD Scholar", "desc": "Assessment of Freshwater Ecosystem Services and determination of Ecological Functional Zones in distinct Himalayan catchments (Co-supervisor: Prof. Sumit Sen).", "photo": "assets/img/prakhar_sharma.png", "links": [] },
+        { "name": "Anusha Somisetty", "role": "PhD Scholar", "desc": "Hydrological water budgeting and assessment of climate extremes in Himalayan Catchments (Co-supervisor: Dr. Vishal Singh, NIH Roorkee).", "photo": "assets/img/anusha_somisetty.png", "links": [] },
+        { "name": "Akriti Singh", "role": "PhD Scholar", "desc": "Comparative assessment of Hydrological Resilience of Catchments in Peninsular India Considering Adaptation Scenarios.", "photo": "assets/img/akriti_singh.png", "links": [] },
+        { "name": "Gopeshwar Sahu", "role": "PhD Scholar", "desc": "Physics-informed machine learning for hydrological modelling for human-influenced catchments.", "photo": "assets/img/gopeshwar_sahu.png", "links": [] },
         { "name": "Truptimayee Ghosh", "role": "PhD Scholar", "desc": "Improving vegetation representation in hydrological modelling.", "photo": "", "links": [] },
         { "name": "Varun Bhasin", "role": "PhD Scholar", "desc": "AI-Integrated Hydrological and Flood Risk Modelling for Dam Safety (Co-supervisor: Prof. NK Goel).", "photo": "", "links": [] },
         { "name": "Sakshi Tripathi", "role": "PhD Scholar", "desc": "Extraction of snow-related Essential Climate Variables (ECVs) for Indian North Western Himalayas (Co-supervisor: Dr. Praveen Thakur, IIRS Dehradun).", "photo": "", "links": [] },
@@ -34,8 +34,8 @@
     {
       "title": "Alumni",
       "members": [
-        { "name": "Dr. Vijaykumar Bejagam (PMRF)", "role": "Former PhD Student", "desc": "Thesis title: Multi-scale Assessment of Indian Terrestrial Ecosystems under Climate Change.", "photo": "", "links": [] },
-        { "name": "Dr. Nikunj K. Mangukiya", "role": "Former PhD Student", "desc": "Thesis title: Deep Learning-based Models for Hydrological Predictions in Distinct Indian Watersheds.", "photo": "", "links": [] }
+        { "name": "Dr. Vijaykumar Bejagam (PMRF)", "role": "Former PhD Student", "desc": "Thesis title: Multi-scale Assessment of Indian Terrestrial Ecosystems under Climate Change.", "photo": "assets/img/vijaykumar_bejagam.png", "links": [] },
+        { "name": "Dr. Nikunj K. Mangukiya", "role": "Former PhD Student", "desc": "Thesis title: Deep Learning-based Models for Hydrological Predictions in Distinct Indian Watersheds.", "photo": "assets/img/nikunj_mangukiya.png", "links": [] }
       ]
     }
   ]
