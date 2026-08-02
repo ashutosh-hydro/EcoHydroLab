@@ -157,7 +157,7 @@ p { margin-block: 0.6em; max-width: 68ch; }
 /* ---------- Highlights ---------- */
 .highlight { display: grid; grid-template-columns: 1fr 1.4fr; gap: var(--gap); align-items: center; margin-bottom: 2.5rem; }
 .highlight:nth-child(even) .highlight-media { order: 2; }
-.highlight-media img { border-radius: var(--radius); border: 1px solid var(--line); width: 100%; aspect-ratio: 16/10; object-fit: cover; background: var(--paper-2); }
+.highlight-media img { border-radius: var(--radius); border: 1px solid var(--line); width: 100%; height: auto; background: var(--paper-2); }
 @media (max-width: 720px) { .highlight { grid-template-columns: 1fr; } .highlight:nth-child(even) .highlight-media { order: 0; } }
 
 /* ---------- Section head ---------- */
