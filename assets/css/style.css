@@ -252,5 +252,10 @@ a:focus-visible, button:focus-visible, .btn:focus-visible {
 }
 
 .center { text-align: center; }
+
+/* Responsive video embed (16:9) */
+.video-embed { position: relative; width: 100%; max-width: 860px; margin: 1.8rem auto 0; aspect-ratio: 16/9; border-radius: var(--radius); overflow: hidden; border: 1px solid var(--line); background: #000; }
+.video-embed iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+.section--dark .video-embed { border-color: rgba(255,255,255,.15); }
 .mt-2 { margin-top: 2rem; }
 .muted { color: var(--muted); }
