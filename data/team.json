@@ -305,7 +305,8 @@
           "links": []
         }
       ],
-      "section": "Alumni"
+      "section": "Alumni",
+      "groupByYear": true
     }
   ]
 }

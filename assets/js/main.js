@@ -135,11 +135,24 @@ async function renderTeam(mountId) {
     }
     return `
     ${heading}
-    <div class="grid grid-4">
-      ${g.members.map(personHTML).join('')}
-    </div>
+    ${g.groupByYear ? membersByYear(g.members) : `<div class="grid grid-4">${g.members.map(personHTML).join('')}</div>`}
   `;
   }).join('');
+
+  function membersByYear(members) {
+    // Bucket members by the year found in their role (e.g. "M.Tech · 2024"); newest first
+    const buckets = {};
+    members.forEach(m => {
+      const match = (m.role || '').match(/\b(19|20)\d{2}\b/);
+      const year = match ? match[0] : 'Other';
+      (buckets[year] = buckets[year] || []).push(m);
+    });
+    const years = Object.keys(buckets).sort((a, b) => (b === 'Other' ? -1 : a === 'Other' ? 1 : b - a));
+    return years.map(y => `
+      <div class="team-year-title">${y === 'Other' ? 'Other' : 'Class of ' + y}</div>
+      <div class="grid grid-4">${buckets[y].map(personHTML).join('')}</div>
+    `).join('');
+  }
 
   function personHTML(m) {
     const initials = m.name.split(' ').map(s => s[0]).slice(0, 2).join('');
