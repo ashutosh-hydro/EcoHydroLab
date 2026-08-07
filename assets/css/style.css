@@ -294,6 +294,8 @@ a:focus-visible, button:focus-visible, .btn:focus-visible {
 .plain-list { list-style: none; margin-top: 1rem; }
 .plain-list li { padding: .5rem 0 .5rem 1.4rem; position: relative; font-size: .95rem; border-bottom: 1px dashed var(--line); }
 .plain-list li::before { content: "—"; position: absolute; left: 0; color: var(--river); }
+.plain-list--muted li { padding: .3rem 0 .3rem 1.1rem; border-bottom: none; color: var(--muted); font-size: .95rem; }
+.plain-list--muted li::before { content: "•"; color: var(--muted); }
 
 .proj-meta { display: block; font-family: var(--mono); font-size: .72rem; color: var(--muted); margin-top: .6rem; letter-spacing: .02em; }
 
