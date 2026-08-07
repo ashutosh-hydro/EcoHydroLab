@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Large-Sample Hydrology — EcoHydroLab</title>
+<meta name="description" content="Advancing large-sample hydrology for Indian catchments — from CAMELS-IND to machine learning and hybrid physics-based + ML models.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<header class="site-header">
+  <nav class="nav wrap" aria-label="Primary">
+    <a class="brand" href="index.html">
+      <img class="mark" src="assets/img/logo-icon.png" alt="" width="30" height="30">
+      EcoHydroLab
+    </a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    <ul class="nav-links">
+      <li><a href="index.html" >Home</a></li>
+      <li><a href="research.html" class="active">Research</a></li>
+      <li><a href="publications.html" >Publications</a></li>
+      <li><a href="datasets.html" >Datasets &amp; Code</a></li>
+      <li><a href="camels-ind.html" >CAMELS-IND</a></li>
+      <li><a href="pi.html" >PI</a></li>
+      <li><a href="team.html" >Team</a></li>
+      <li><a href="news.html" >News</a></li>
+      <li><a href="join.html" >Join Us</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="page-hero">
+  <div class="wrap">
+    <span class="eyebrow">Research &middot; Large-Sample Hydrology</span>
+    <h1>Advancing Large-Sample Hydrology for Indian Catchments</h1>
+    <p>From machine learning to hybrid physics-based + ML models.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <figure class="fig reveal">
+      <img src="assets/img/large_sample_hydrology_india.png" alt="Large-sample hydrology for Indian catchments — from CAMELS-IND to machine learning and hybrid physics-based models" loading="lazy" style="border-radius:var(--radius);border:1px solid var(--line);width:100%;height:auto">
+    </figure>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="reveal" style="margin-bottom:2.5rem">
+      <span class="eyebrow">Background and Motivation</span>
+      <h2>Why large-sample hydrology</h2>
+      <p class="muted">India has more than 5,000–6,000 river catchments, yet fewer than one in five carry active streamflow gauges, leaving vast regions unmonitored even though these observations are essential for designing and operating dams, irrigation systems, and other infrastructure. Where gauges exist, records are often short, discontinuous, and rarely available in machine-readable form. Combined with India's exceptional hydroclimatic diversity — arid, semi-arid, tropical, and Himalayan snow-fed regimes — this makes single-catchment studies inadequate for uncovering generalizable rules of hydrological behavior. Large-sample hydrology, which analyses hundreds of basins simultaneously, offers a path to robust and transferable prediction, particularly in ungauged and data-scarce settings.</p>
+    </div>
+
+    <div class="reveal" style="margin-bottom:2.5rem">
+      <span class="eyebrow">Approach</span>
+      <h2>A benchmark dataset and a progression of models</h2>
+      <p class="muted">This work presents an integrated programme that advances large-sample hydrological modelling for India. Its foundation is CAMELS-IND (Catchment Attributes and MEteorology for Large-sample Studies – India), the country's first standardized large-sample dataset, spanning 472 catchments over 1980–2020 with 19 meteorological variables and 211 catchment attributes. Now widely adopted (8,000+ downloads; 25+ publications), it places India on the global CAMELS map and enables reproducible, comparative hydrology.</p>
+      <p class="muted">Building on this dataset, a series of machine-learning and hybrid models progressively strengthen both prediction and process understanding. A large-sample LSTM trained jointly across diverse watersheds outperforms locally calibrated models and generalizes to ungauged basins. A modified LSTM recovers daily streamflow from monthly, weekly, and intermittent observations, offering a practical solution for India's data-sparse network without costly field campaigns. A benchmark of 47 conceptual rainfall-runoff models across 159 watersheds identifies an optimal-complexity shortlist and characterizes structural uncertainty. Finally, hybrid physics-informed approaches — a differentiable model coupling a simplified HBV structure with reservoir operations (dPLHBVRes), and mass- and energy-balance-constrained LSTMs — improve prediction in regulated and human-influenced catchments while simultaneously estimating untrained variables such as evapotranspiration, soil moisture, and reservoir storage.</p>
+    </div>
+
+    <div class="reveal">
+      <span class="eyebrow">Contribution of ML</span>
+      <h2>Prediction, understanding &amp; transferability</h2>
+      <p class="muted">Across these studies, machine learning contributes on three fronts. For prediction, data-driven and hybrid models deliver skillful streamflow in gauged, ungauged, regulated, and data-sparse basins alike. For understanding, physics-informed architectures align their internal states with real hydrological processes — storage change, soil moisture, and evapotranspiration — moving beyond black-box behavior and improving low-flow and high-flow realism. For transferability, learning across hundreds of catchments at once captures generalizable behavior that supports prediction under data scarcity and change.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Related papers -->
+<section class="section section--alt">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Selected work</span>
+      <h2>Related papers</h2>
+    </div>
+    <div class="reveal">
+      <p class="muted">CAMELS-IND: hydrometeorological time series and catchment attributes for 472 catchments in Peninsular India.</p>
+      <p class="pub-links"><a href="https://doi.org/10.5194/essd-17-461-2025" target="_blank" rel="noopener">Earth System Science Data (2025) ↗</a></p>
+
+      <p class="muted">Deep learning-based approach for enhancing streamflow prediction in watersheds with aggregated and intermittent observations.</p>
+      <p class="pub-links"><a href="https://doi.org/10.1029/2024WR037331" target="_blank" rel="noopener">Water Resources Research (2025) ↗</a></p>
+
+      <p class="muted">Benchmarking and Selecting Optimal Hydrological Models for Large-Sample Applications Considering Complexity and Uncertainty.</p>
+      <p class="pub-links"><a href="https://doi.org/10.1029/2026WR044753" target="_blank" rel="noopener">Water Resources Research (2026) ↗</a></p>
+
+      <p class="muted">Does MC-LSTM model improve the reliability of streamflow prediction in human-influenced watersheds?</p>
+      <p class="pub-links"><a href="https://doi.org/10.1016/j.jhydrol.2025.134711" target="_blank" rel="noopener">Journal of Hydrology (2025) ↗</a></p>
+
+      <p class="muted">Integrating Reservoir Dynamics into Differentiable Process-Based Hydrological Model for Enhanced Streamflow Estimation.</p>
+      <p class="pub-links"><a href="https://doi.org/10.1029/2025WR040268" target="_blank" rel="noopener">Water Resources Research (2025) ↗</a></p>
+
+      <p class="muted">How to enhance hydrological predictions in hydrologically distinct watersheds of the Indian subcontinent?</p>
+      <p class="pub-links"><a href="https://doi.org/10.1002/hyp.14936" target="_blank" rel="noopener">Hydrological Processes (2023) ↗</a></p>
+
+      <p class="muted">Transferring Hydrologic Data Across Continents – Leveraging Data-Rich Regions to Improve Hydrologic Prediction in Data-Sparse Regions.</p>
+      <p class="pub-links"><a href="https://doi.org/10.1029/2020WR028600" target="_blank" rel="noopener">Water Resources Research (2021) ↗</a></p>
+    </div>
+    <div class="center mt-2">
+      <a class="btn btn--ghost" href="publications.html">See all publications</a>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <h4>EcoHydroLab</h4>
+        <p style="color:#c3cdd1">Multiscale Ecohydrological Processes, Interactions and Disturbances. Department of Hydrology, IIT Roorkee, Uttarakhand, India.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul class="footer-links">
+          <li><a href="research.html">Research</a></li>
+          <li><a href="publications.html">Publications</a></li>
+          <li><a href="datasets.html">Datasets &amp; Code</a></li>
+          <li><a href="team.html">Team</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Connect</h4>
+        <ul class="footer-links">
+          <li><a href="mailto:ashutosh.sharma@hy.iitr.ac.in">Email</a></li>
+          <li><a href="https://scholar.google.com/citations?user=15sE22kAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a></li>
+          <li><a href="https://www.researchgate.net/profile/Ashutosh-Sharma-42" target="_blank" rel="noopener">ResearchGate</a></li>
+          <li><a href="https://x.com/AshutoshHydro" target="_blank" rel="noopener">X</a></li>
+          <li><a href="https://www.linkedin.com/in/ashutoshhydro/" target="_blank" rel="noopener">LinkedIn</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year"></span> EcoHydroLab, IIT Roorkee</span>
+      <span>Department of Hydrology</span>
+    </div>
+  </div>
+</footer>
+<script src="assets/js/main.js"></script>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
