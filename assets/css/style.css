@@ -202,6 +202,15 @@ p { margin-block: 0.6em; max-width: 68ch; }
 .person .desc { font-size: .88rem; color: var(--muted); margin-top: .5rem; }
 .person .socials { margin-top: .6rem; display: flex; gap: .7rem; justify-content: center; }
 .person .socials a { font-size: .8rem; font-family: var(--mono); }
+.person .pubs { margin-top: .7rem; padding-top: .6rem; border-top: 1px dashed var(--line); text-align: left; }
+.person .pubs-title { font-family: var(--mono); font-size: .68rem; letter-spacing: .05em; color: var(--muted); text-transform: uppercase; margin-bottom: .35rem; }
+.person .pubs ul { list-style: none; }
+.person .pubs li { font-size: .8rem; line-height: 1.4; margin-bottom: .4rem; }
+.person .pubs li a { color: var(--slate); }
+.person .pubs li .pub-year { color: var(--muted); font-family: var(--mono); font-size: .72rem; }
+.person .pubs .pubs-more { font-size: .78rem; }
+.person .pubs .pubs-more a { font-family: var(--mono); }
+.pi-grid { grid-template-columns: minmax(320px, 440px); justify-content: start; }
 .team-group-title { margin: 2.5rem 0 1.5rem; }
 .team-subgroup-title { font-size: 1.1rem; color: var(--river); margin: 2.5rem 0 1.2rem; padding-bottom: .4rem; border-bottom: 1px solid var(--line); font-family: var(--sans); font-weight: 600; letter-spacing: .01em; }
 .team-subgroup-title:first-of-type { margin-top: 1rem; }

@@ -109,6 +109,36 @@ async function renderPublications(mountId) {
   draw();
 }
 
+// ---- Team <-> Publications matching ----
+// Publications list authors as "Lastname, I. I." — pull out (lastname, first-initial) pairs.
+function extractPubAuthors(authorsStr) {
+  const out = [];
+  const re = /([A-Z][A-Za-z'-]+),\s*((?:[A-Z]\.\s*)+)/g;
+  let m;
+  while ((m = re.exec(authorsStr))) {
+    out.push({ lastname: m[1], initial: m[2].trim()[0] });
+  }
+  return out;
+}
+// Team names are "First [Middle] Last" (usually), occasionally "Surname Initials" (e.g. "Nagashree GE").
+// Try both readings and see if either matches a (lastname, initial) pair from the publication.
+function findMemberPublications(memberName, pubs) {
+  const clean = memberName.replace(/\(.*?\)/g, '').replace(/^(Dr\.|Prof\.)\s*/, '').trim();
+  const tokens = clean.split(/\s+/);
+  if (tokens.length < 2) return [];
+  const candidates = [
+    { surname: tokens[tokens.length - 1], initial: tokens[0][0] }, // standard order
+    { surname: tokens[0], initial: tokens[1][0] }                  // reversed (surname-first) order
+  ];
+  return pubs.filter(p => {
+    const authors = extractPubAuthors(p.authors);
+    return authors.some(a => candidates.some(c =>
+      c.surname.toLowerCase() === a.lastname.toLowerCase() &&
+      c.initial.toLowerCase() === a.initial.toLowerCase()
+    ));
+  }).sort((a, b) => b.year - a.year);
+}
+
 // ---- Team renderer ----
 async function renderTeam(mountId) {
   const mount = document.getElementById(mountId);
@@ -116,6 +146,9 @@ async function renderTeam(mountId) {
   const result = await loadJSON('data/team.json');
   if (result.error) { showError(mount, result.error); return; }
   const data = result.data;
+
+  const pubsResult = await loadJSON('data/publications.json');
+  const pubs = pubsResult.data || [];
 
   const groups = data.groups || [];
   let lastSection = null;
@@ -133,9 +166,12 @@ async function renderTeam(mountId) {
       heading = `<h2 class="team-group-title">${g.title}</h2>`;
       lastSection = null;
     }
+    const isPI = g.title === 'Principal Investigator';
+    const showPubs = !isPI;
+    const gridClass = isPI ? 'grid pi-grid' : 'grid grid-4';
     return `
     ${heading}
-    ${g.groupByYear ? membersByYear(g.members) : `<div class="grid grid-4">${g.members.map(personHTML).join('')}</div>`}
+    ${g.groupByYear ? membersByYear(g.members) : `<div class="${gridClass}">${g.members.map(m => personHTML(m, showPubs)).join('')}</div>`}
   `;
   }).join('');
 
@@ -154,12 +190,29 @@ async function renderTeam(mountId) {
     `).join('');
   }
 
-  function personHTML(m) {
+  function personHTML(m, showPubs) {
     const initials = m.name.split(' ').map(s => s[0]).slice(0, 2).join('');
     const img = m.photo
       ? `<img class="avatar" src="${m.photo}" alt="Photo of ${m.name}">`
       : `<div class="avatar" style="display:flex;align-items:center;justify-content:center;font-family:var(--serif);font-size:2rem;color:var(--river)">${initials}</div>`;
     const socials = (m.links || []).map(l => `<a href="${l.url}" target="_blank" rel="noopener">${l.label}</a>`).join('');
+
+    const matched = (showPubs && pubs.length) ? findMemberPublications(m.name, pubs) : [];
+    const shown = matched.slice(0, 4);
+    const remaining = matched.length - shown.length;
+    const pubsHTML = matched.length ? `
+      <div class="pubs">
+        <div class="pubs-title">Publications</div>
+        <ul>
+          ${shown.map(p => `
+            <li>
+              ${p.doi ? `<a href="https://doi.org/${p.doi}" target="_blank" rel="noopener">${p.title}</a>` : p.title}
+              <span class="pub-year">— ${p.year}</span>
+            </li>`).join('')}
+        </ul>
+        ${remaining > 0 ? `<div class="pubs-more"><a href="publications.html">+${remaining} more on the Publications page ↗</a></div>` : ''}
+      </div>` : '';
+
     return `
       <div class="person">
         ${img}
@@ -167,6 +220,7 @@ async function renderTeam(mountId) {
         <div class="role">${m.role}</div>
         ${m.desc ? `<div class="desc">${m.desc}</div>` : ''}
         ${socials ? `<div class="socials">${socials}</div>` : ''}
+        ${pubsHTML}
       </div>`;
   }
 }
