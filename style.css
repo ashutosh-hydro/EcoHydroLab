@@ -157,7 +157,7 @@ p { margin-block: 0.6em; max-width: 68ch; }
 /* ---------- Highlights ---------- */
 .highlight { display: grid; grid-template-columns: 1fr 1.4fr; gap: var(--gap); align-items: center; margin-bottom: 2.5rem; }
 .highlight:nth-child(even) .highlight-media { order: 2; }
-.highlight-media img { border-radius: var(--radius); border: 1px solid var(--line); width: 100%; aspect-ratio: 16/10; object-fit: cover; background: var(--paper-2); }
+.highlight-media img { border-radius: var(--radius); border: 1px solid var(--line); width: 100%; height: auto; background: var(--paper-2); }
 @media (max-width: 720px) { .highlight { grid-template-columns: 1fr; } .highlight:nth-child(even) .highlight-media { order: 0; } }
 
 /* ---------- Section head ---------- */
@@ -203,9 +203,7 @@ p { margin-block: 0.6em; max-width: 68ch; }
 .person .socials { margin-top: .6rem; display: flex; gap: .7rem; justify-content: center; }
 .person .socials a { font-size: .8rem; font-family: var(--mono); }
 .team-group-title { margin: 2.5rem 0 1.5rem; }
-.team-subgroup-title { font-size: 1.1rem; color: var(--river); margin: 2.5rem 0 1.2rem; padding-bottom: .4rem; border-bottom: 1px solid var(--line); font-family: var(--sans); font-weight: 600; letter-spacing: .01em; }
-.team-subgroup-title:first-of-type { margin-top: 1rem; }
-.team-year-title { font-family: var(--mono); font-size: .8rem; letter-spacing: .06em; text-transform: uppercase; color: var(--sediment); margin: 1.6rem 0 1rem; }
+.team-subgroup-title { font-size: 1.1rem; color: var(--river); margin: 1.8rem 0 1.2rem; padding-bottom: .4rem; border-bottom: 1px solid var(--line); font-family: var(--sans); font-weight: 600; letter-spacing: .01em; }
 
 /* ---------- News ---------- */
 .news-item { display: grid; grid-template-columns: 130px 1fr; gap: 1.2rem; padding: 1.1rem 0; border-bottom: 1px solid var(--line); }
@@ -254,50 +252,15 @@ a:focus-visible, button:focus-visible, .btn:focus-visible {
   outline: 3px solid var(--river-lt); outline-offset: 2px; border-radius: 2px;
 }
 
+/* Figures with captions */
+.fig { margin: 2rem 0 0; }
+.fig img { width: 100%; border-radius: var(--radius); }
+.fig figcaption {
+  font-family: var(--sans); font-size: 0.85rem; color: var(--muted);
+  margin-top: 0.6rem; line-height: 1.5; text-align: center;
+}
+.section--dark .fig figcaption { color: var(--river-lt); }
+
 .center { text-align: center; }
-
-/* PI page */
-.pi-intro { display: grid; grid-template-columns: 260px 1fr; gap: 2.5rem; align-items: start; }
-.pi-photo img { width: 100%; border-radius: var(--radius); border: 1px solid var(--line); background: var(--paper-2); }
-.pi-bio p { margin-bottom: 1rem; }
-.pi-links { display: flex; gap: .8rem; flex-wrap: wrap; margin-top: 1.2rem; }
-@media (max-width: 720px) { .pi-intro { grid-template-columns: 1fr; } .pi-photo { max-width: 240px; } }
-
-.pi-metrics { display: flex; flex-wrap: wrap; gap: 2.5rem; align-items: baseline; margin-top: 2.5rem; padding-top: 2rem; border-top: 1px solid var(--line); }
-.pi-metric .num { font-family: var(--serif); font-size: 2.4rem; color: var(--sediment); line-height: 1; }
-.pi-metric .lbl { font-size: .82rem; color: var(--muted); margin-top: .3rem; }
-.pi-note { font-size: .78rem; color: var(--muted); font-style: italic; margin-left: auto; align-self: flex-end; }
-
-/* Timeline (appointments / education) */
-.timeline { list-style: none; margin-top: 1rem; }
-.timeline li { display: grid; grid-template-columns: 150px 1fr; gap: 1rem; padding: .9rem 0; border-bottom: 1px solid var(--line); }
-.tl-when { font-family: var(--mono); font-size: .78rem; color: var(--river); letter-spacing: .02em; padding-top: .15rem; }
-.tl-what { font-size: .96rem; }
-.tl-sub { display: block; color: var(--muted); font-size: .88rem; margin-top: .2rem; }
-@media (max-width: 520px) { .timeline li { grid-template-columns: 1fr; gap: .2rem; } }
-
-/* Award cards */
-.award-card { display: grid; grid-template-columns: auto 1fr; gap: 1rem; padding: 1rem 0; border-bottom: 1px solid var(--line); align-items: start; }
-.award-year { font-family: var(--mono); font-size: .72rem; color: var(--sediment); border: 1px solid var(--sediment); border-radius: var(--radius); padding: .2rem .5rem; height: fit-content; }
-.award-card p { margin: 0; font-size: .95rem; }
-
-/* Plain lists (editorial / memberships) */
-.plain-list { list-style: none; margin-top: 1rem; }
-.plain-list li { padding: .5rem 0 .5rem 1.4rem; position: relative; font-size: .95rem; border-bottom: 1px dashed var(--line); }
-.plain-list li::before { content: "—"; position: absolute; left: 0; color: var(--river); }
-
-.proj-meta { display: block; font-family: var(--mono); font-size: .72rem; color: var(--muted); margin-top: .6rem; letter-spacing: .02em; }
-
-/* Zenodo community banner */
-.zenodo-banner { display: grid; grid-template-columns: 1fr auto; gap: 2rem; align-items: center; }
-.zenodo-banner-text h2 { margin: .2rem 0 .5rem; }
-.zenodo-banner-text p { margin: 0; }
-.zenodo-banner-cta { white-space: nowrap; }
-@media (max-width: 720px) { .zenodo-banner { grid-template-columns: 1fr; gap: 1.2rem; } }
-
-/* Responsive video embed (16:9) */
-.video-embed { position: relative; width: 100%; max-width: 860px; margin: 1.8rem auto 0; aspect-ratio: 16/9; border-radius: var(--radius); overflow: hidden; border: 1px solid var(--line); background: #000; }
-.video-embed iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
-.section--dark .video-embed { border-color: rgba(255,255,255,.15); }
 .mt-2 { margin-top: 2rem; }
 .muted { color: var(--muted); }
