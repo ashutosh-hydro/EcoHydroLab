@@ -30,6 +30,35 @@
       ]
     },
     {
+      "title": "Postdoctoral Scholars",
+      "members": [
+        {
+          "name": "Dr. Sushree Swagatika Swain",
+          "role": "Postdoctoral Scholar",
+          "desc": "PhD from IIT Kharagpur.",
+          "photo": "assets/img/Dr_SushreeSwain.jpeg",
+          "links": [
+            {
+              "label": "Google Scholar",
+              "url": "https://scholar.google.com/citations?user=wmSf-xEAAAAJ&hl=en"
+            }
+          ]
+        },
+        {
+          "name": "Dr. Hardeep Kumar Maurya",
+          "role": "Postdoctoral Scholar",
+          "desc": "PhD from IIT Jammu.",
+          "photo": "assets/img/Dr_Hardeep.jpeg",
+          "links": [
+            {
+              "label": "Google Scholar",
+              "url": "https://scholar.google.com/citations?user=KTw-hkQAAAAJ&hl=en"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "title": "Research Scholars",
       "members": [
         {
