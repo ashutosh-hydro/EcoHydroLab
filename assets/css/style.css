@@ -115,7 +115,11 @@ p { margin-block: 0.6em; max-width: 68ch; }
 }
 
 /* ---------- Hero ---------- */
-.hero { position: relative; overflow: hidden; background: var(--slate); color: var(--paper); }
+.hero {
+  position: relative; overflow: hidden; color: var(--paper);
+  background: linear-gradient(rgba(15,42,50,.72), rgba(15,42,50,.82)), url("../img/background.jpg");
+  background-size: cover; background-position: center;
+}
 .hero-contours { position: absolute; inset: 0; width: 100%; height: 100%; opacity: 0.28; }
 .hero-inner { position: relative; z-index: 2; padding-block: clamp(4rem, 10vw, 7rem); }
 .hero h1 { color: var(--paper); max-width: 16ch; }
@@ -246,7 +250,11 @@ p { margin-block: 0.6em; max-width: 68ch; }
 @media (max-width: 720px) { .footer-grid { grid-template-columns: 1fr; } }
 
 /* ---------- Page hero (interior) ---------- */
-.page-hero { background: var(--slate); color: var(--paper); padding-block: clamp(2.5rem, 6vw, 4rem); }
+.page-hero {
+  color: var(--paper); padding-block: clamp(2.5rem, 6vw, 4rem);
+  background: linear-gradient(rgba(15,42,50,.72), rgba(15,42,50,.82)), url("../img/background.jpg");
+  background-size: cover; background-position: center;
+}
 .page-hero h1 { color: var(--paper); }
 .page-hero p { color: var(--river-lt); max-width: 60ch; }
 
