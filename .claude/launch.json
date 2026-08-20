@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "ecohydrolab-static",
+      "runtimeExecutable": "python3",
+      "runtimeArgs": ["-m", "http.server", "8123", "--directory", "/Users/ashutoshsharma/Documents/EcoHydroLab"],
+      "port": 8123
+    }
+  ]
+}
