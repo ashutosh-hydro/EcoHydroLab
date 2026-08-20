@@ -46,6 +46,31 @@
 
 
 
+<!-- Interactive map -->
+<section class="section section--feature">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Explore the data <span class="badge-live">Interactive map</span></span>
+      <h2>Catchments &amp; gauge stations</h2>
+      <p class="muted">Filter by river basin, then select a gauge station — from the list or the map — to see its attributes and highlight its catchment.</p>
+    </div>
+    <div class="gis-controls reveal">
+      <label for="basin-filter">River basin
+        <select id="basin-filter"><option value="">All river basins</option></select>
+      </label>
+      <label for="station-filter">Gauge station
+        <select id="station-filter"><option value="">All gauge stations</option></select>
+      </label>
+    </div>
+    <div class="gis-window reveal">
+      <div id="camels-map" class="gis-map"></div>
+      <div class="gis-panel" id="gis-panel">
+        <p class="muted">Select a gauge station on the map to see its details here.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- Key statistics -->
 <section class="section">
   <div class="wrap">
@@ -122,23 +147,6 @@
       <div class="card research-card reveal"><h3>Streamflow data</h3><p>Observed streamflow plus LSTM-predicted streamflow for all catchments, enabling gap-filling and benchmarking.</p></div>
       <div class="card research-card reveal"><h3>Global comparability</h3><p>Follows CAMELS standards used in the USA, Chile, Brazil and elsewhere for international comparison.</p></div>
       <div class="card research-card reveal"><h3>Human impact</h3><p>Data on dams, population density, and land-cover change for studying anthropogenic influence on hydrology.</p></div>
-    </div>
-  </div>
-</section>
-
-<!-- Interactive map -->
-<section class="section">
-  <div class="wrap">
-    <div class="section-head reveal">
-      <span class="eyebrow">Explore the data</span>
-      <h2>Catchments &amp; gauge stations</h2>
-      <p class="muted">Click a gauge station on the map to see its attributes and highlight its catchment.</p>
-    </div>
-    <div class="gis-window reveal">
-      <div id="camels-map" class="gis-map"></div>
-      <div class="gis-panel" id="gis-panel">
-        <p class="muted">Select a gauge station on the map to see its details here.</p>
-      </div>
     </div>
   </div>
 </section>
@@ -248,6 +256,7 @@
 </script>
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 <script src="assets/geo/camels_geo_data.js"></script>
+<script src="assets/geo/camels_attributes.js"></script>
 <script>
   // Interactive GIS window: CAMELS-IND catchments + gauge stations
   // Geometry/attributes are loaded from assets/geo/camels_geo_data.js (inline data, not fetch())
@@ -255,6 +264,8 @@
   (function () {
     var mapEl = document.getElementById('camels-map');
     var panel = document.getElementById('gis-panel');
+    var basinSelect = document.getElementById('basin-filter');
+    var stationSelect = document.getElementById('station-filter');
     if (!mapEl || typeof L === 'undefined') return;
 
     var map = L.map(mapEl).setView([20.5, 79.5], 5);
@@ -267,33 +278,200 @@
 
     var catchmentStyle = { color: '#2a7f9e', weight: 1, fillColor: '#6fb3c9', fillOpacity: 0.25 };
     var selectedCatchmentStyle = { color: '#c98a3b', weight: 2.5, fillColor: '#c98a3b', fillOpacity: 0.4 };
+    var basinCatchmentStyle = { color: '#3f8f5f', weight: 1.5, fillColor: '#7fbf97', fillOpacity: 0.35 };
+    var dimCatchmentStyle = { color: '#aab1b4', weight: 0.5, fillColor: '#c7cdd0', fillOpacity: 0.08 };
+
     var gaugeStyle = { radius: 4, color: '#0d3b45', weight: 1, fillColor: '#c98a3b', fillOpacity: 0.9 };
     var selectedGaugeStyle = { radius: 6, color: '#0d3b45', weight: 1.5, fillColor: '#c98a3b', fillOpacity: 1 };
+    var basinGaugeStyle = { radius: 5, color: '#0d3b45', weight: 1, fillColor: '#3f8f5f', fillOpacity: 0.95 };
+    var dimGaugeStyle = { radius: 3, color: '#aab1b4', weight: 1, fillColor: '#c7cdd0', fillOpacity: 0.5 };
 
-    var catchmentsByGaugeId = {};   // gauge_id -> catchment layer, for select-by-gauge linking
-    var selectedCatchmentLayer = null;
-    var selectedGaugeLayer = null;
+    // gauge_id -> layer / properties, and basin -> gauge_ids, for the filter controls
+    var catchmentLayersByGaugeId = {};
+    var gaugeLayersByGaugeId = {};
+    var gaugePropsByGaugeId = {};
+    var gaugeIdsByBasin = {};
+    var basins = [];
 
-    function showPanel(title, rows) {
-      var html = '<h4 style="color:var(--slate)">' + title + '</h4><dl>';
-      rows.forEach(function (r) {
+    var activeBasin = '';
+    var activeGaugeId = '';
+    var fullCatchmentsBounds = null;
+
+    if (window.CAMELS_GAUGES) {
+      window.CAMELS_GAUGES.features.forEach(function (f) {
+        var p = f.properties;
+        var gid = String(p.gauge_id);
+        gaugePropsByGaugeId[gid] = p;
+        if (p.RIV_BASIN) {
+          if (!gaugeIdsByBasin[p.RIV_BASIN]) { gaugeIdsByBasin[p.RIV_BASIN] = []; basins.push(p.RIV_BASIN); }
+          gaugeIdsByBasin[p.RIV_BASIN].push(gid);
+        }
+      });
+      basins.sort();
+    }
+
+    function siteName(gid) {
+      var p = gaugePropsByGaugeId[gid];
+      return (p && (p.CWC_SITE_N || gid)) || gid;
+    }
+
+    function populateBasinSelect() {
+      basinSelect.innerHTML = '<option value="">All river basins</option>' +
+        basins.map(function (b) { return '<option value="' + b + '">' + b + ' (' + gaugeIdsByBasin[b].length + ')</option>'; }).join('');
+    }
+
+    function populateStationSelect(basin) {
+      var ids = basin ? (gaugeIdsByBasin[basin] || []).slice() : Object.keys(gaugePropsByGaugeId);
+      ids.sort(function (a, b) { return siteName(a).localeCompare(siteName(b)); });
+      stationSelect.innerHTML = '<option value="">' + (basin ? 'All stations in this basin' : 'All gauge stations') + '</option>' +
+        ids.map(function (gid) { return '<option value="' + gid + '">' + siteName(gid) + '</option>'; }).join('');
+    }
+
+    // ---- Catchment attributes (assets/attributes_csv, pre-built into camels_attributes.js) ----
+    var PRIMARY_ATTRS = [
+      ['topo', 'cwc_area', 'Catchment area', 'km²'],
+      ['topo', 'elev_mean', 'Mean elevation', 'm'],
+      ['clim', 'p_mean', 'Mean precipitation', 'mm/day'],
+      ['clim', 'aridity_p_pet', 'Aridity index (P/PET)', ''],
+      ['hydro', 'q_mean', 'Mean streamflow', 'mm/day'],
+      ['land', 'dom_land_cover', 'Dominant land cover', ''],
+      ['anth', 'num_dams', 'Dams upstream', ''],
+      ['name', 'flow_availability', 'Flow record availability', '%']
+    ];
+
+    function prettifyKey(key) {
+      var s = key.replace(/_/g, ' ');
+      return s.charAt(0).toUpperCase() + s.slice(1);
+    }
+
+    function attrsFor(gid) {
+      return (window.CAMELS_ATTRIBUTES && window.CAMELS_ATTRIBUTES[gid]) || null;
+    }
+
+    function renderAttrPanel(gid, p) {
+      var idRows = [
+        ['Gauge ID', p.gauge_id],
+        ['GHI station ID', p.GHI_STN_ID],
+        ['Site name', p.CWC_SITE_N],
+        ['River', p.CWC_RIVER],
+        ['River basin', p.RIV_BASIN]
+      ];
+      var html = '<h4 style="color:var(--slate)">Gauge station: ' + (p.CWC_SITE_N || gid) + '</h4><dl>';
+      idRows.forEach(function (r) {
         if (!r[1]) return;
         html += '<dt>' + r[0] + '</dt><dd>' + r[1] + '</dd>';
       });
       html += '</dl>';
+
+      var attrs = attrsFor(gid);
+      if (!attrs) {
+        panel.innerHTML = html;
+        return;
+      }
+
+      html += '<div class="attr-primary"><dl>';
+      PRIMARY_ATTRS.forEach(function (a) {
+        var group = a[0], key = a[1], label = a[2], unit = a[3];
+        var g = attrs[group];
+        var v = g && g[key];
+        if (v === undefined || v === null || v === '') return;
+        html += '<dt>' + label + '</dt><dd>' + v + (unit ? ' ' + unit : '') + '</dd>';
+      });
+      html += '</dl></div>';
+
+      html += '<button type="button" class="attr-toggle" aria-expanded="false">Show all attributes for this catchment &#9662;</button>';
+      html += '<div class="attr-groups" hidden>';
+      Object.keys(attrs).forEach(function (group) {
+        var groupLabel = (window.CAMELS_ATTR_GROUPS && window.CAMELS_ATTR_GROUPS[group]) || group;
+        var rec = attrs[group];
+        var keys = Object.keys(rec);
+        if (!keys.length) return;
+        html += '<details class="attr-group"><summary>' + groupLabel + ' <span class="attr-count">(' + keys.length + ')</span></summary><dl>';
+        keys.forEach(function (k) {
+          html += '<dt>' + prettifyKey(k) + '</dt><dd>' + rec[k] + '</dd>';
+        });
+        html += '</dl></details>';
+      });
+      html += '</div>';
+
       panel.innerHTML = html;
     }
 
+    panel.addEventListener('click', function (e) {
+      var btn = e.target.closest('.attr-toggle');
+      if (!btn) return;
+      var group = panel.querySelector('.attr-groups');
+      var open = group.hasAttribute('hidden');
+      if (open) {
+        group.removeAttribute('hidden');
+        btn.setAttribute('aria-expanded', 'true');
+        btn.innerHTML = 'Hide all attributes &#9652;';
+      } else {
+        group.setAttribute('hidden', '');
+        btn.setAttribute('aria-expanded', 'false');
+        btn.innerHTML = 'Show all attributes for this catchment &#9662;';
+      }
+    });
+
+    function styleForCatchment(gid) {
+      if (gid === activeGaugeId) return selectedCatchmentStyle;
+      var basin = gaugePropsByGaugeId[gid] && gaugePropsByGaugeId[gid].RIV_BASIN;
+      if (activeBasin) return basin === activeBasin ? basinCatchmentStyle : dimCatchmentStyle;
+      return catchmentStyle;
+    }
+
+    function styleForGauge(gid) {
+      if (gid === activeGaugeId) return selectedGaugeStyle;
+      var basin = gaugePropsByGaugeId[gid] && gaugePropsByGaugeId[gid].RIV_BASIN;
+      if (activeBasin) return basin === activeBasin ? basinGaugeStyle : dimGaugeStyle;
+      return gaugeStyle;
+    }
+
+    function refreshStyles() {
+      Object.keys(catchmentLayersByGaugeId).forEach(function (gid) {
+        var lyr = catchmentLayersByGaugeId[gid];
+        lyr.setStyle(styleForCatchment(gid));
+        if (gid === activeGaugeId) lyr.bringToFront();
+      });
+      Object.keys(gaugeLayersByGaugeId).forEach(function (gid) {
+        var lyr = gaugeLayersByGaugeId[gid];
+        lyr.setStyle(styleForGauge(gid));
+        if (gid === activeGaugeId) lyr.bringToFront();
+      });
+    }
+
+    function selectGauge(gid, opts) {
+      opts = opts || {};
+      var lyr = gaugeLayersByGaugeId[gid];
+      var p = gaugePropsByGaugeId[gid];
+      if (!lyr || !p) return;
+      activeGaugeId = gid;
+      refreshStyles();
+      renderAttrPanel(gid, p);
+      if (!opts.skipPan) {
+        map.flyTo(lyr.getLatLng(), Math.max(map.getZoom(), 9), { duration: 0.5 });
+      }
+      if (!opts.skipSync) {
+        if (p.RIV_BASIN && basinSelect.value !== p.RIV_BASIN) {
+          basinSelect.value = p.RIV_BASIN;
+          activeBasin = p.RIV_BASIN;
+          populateStationSelect(activeBasin);
+        }
+        stationSelect.value = gid;
+      }
+    }
+
     // Catchments are display-only (not clickable) — selecting a gauge station
-    // highlights its linked catchment via catchmentsByGaugeId.
+    // highlights its linked catchment via catchmentLayersByGaugeId.
     if (window.CAMELS_CATCHMENTS) {
       var catchmentsLayer = L.geoJSON(window.CAMELS_CATCHMENTS, {
         style: catchmentStyle,
         onEachFeature: function (feature, lyr) {
-          catchmentsByGaugeId[String(feature.properties.gauge_id)] = lyr;
+          catchmentLayersByGaugeId[String(feature.properties.gauge_id)] = lyr;
         }
       }).addTo(map);
-      map.fitBounds(catchmentsLayer.getBounds());
+      fullCatchmentsBounds = catchmentsLayer.getBounds();
+      map.fitBounds(fullCatchmentsBounds);
     } else {
       console.error('CAMELS_CATCHMENTS data not found — assets/geo/camels_geo_data.js failed to load.');
     }
@@ -304,33 +482,52 @@
           return L.circleMarker(latlng, gaugeStyle);
         },
         onEachFeature: function (feature, lyr) {
-          lyr.on('click', function () {
-            if (selectedGaugeLayer) selectedGaugeLayer.setStyle(gaugeStyle);
-            lyr.setStyle(selectedGaugeStyle);
-            selectedGaugeLayer = lyr;
-
-            if (selectedCatchmentLayer) selectedCatchmentLayer.setStyle(catchmentStyle);
-            var p = feature.properties;
-            var catchmentLyr = catchmentsByGaugeId[String(p.gauge_id)];
-            if (catchmentLyr) {
-              catchmentLyr.setStyle(selectedCatchmentStyle);
-              catchmentLyr.bringToFront();
-            }
-            selectedCatchmentLayer = catchmentLyr || null;
-
-            showPanel('Gauge station: ' + (p.CWC_SITE_N || p.gauge_id), [
-              ['Gauge ID', p.gauge_id],
-              ['GHI station ID', p.GHI_STN_ID],
-              ['Site name', p.CWC_SITE_N],
-              ['River', p.CWC_RIVER],
-              ['River basin', p.RIV_BASIN]
-            ]);
-          });
+          var gid = String(feature.properties.gauge_id);
+          gaugeLayersByGaugeId[gid] = lyr;
+          lyr.on('click', function () { selectGauge(gid); });
         }
       }).addTo(map);
     } else {
       console.error('CAMELS_GAUGES data not found — assets/geo/camels_geo_data.js failed to load.');
     }
+
+    populateBasinSelect();
+    populateStationSelect('');
+
+    basinSelect.addEventListener('change', function () {
+      activeBasin = basinSelect.value;
+      activeGaugeId = '';
+      populateStationSelect(activeBasin);
+      stationSelect.value = '';
+      refreshStyles();
+
+      if (activeBasin) {
+        var ids = gaugeIdsByBasin[activeBasin] || [];
+        var layers = ids.map(function (gid) { return catchmentLayersByGaugeId[gid]; }).filter(Boolean);
+        if (layers.length) map.fitBounds(L.featureGroup(layers).getBounds(), { padding: [20, 20] });
+        panel.innerHTML = '<p class="muted">' + ids.length + ' gauge station' + (ids.length === 1 ? '' : 's') +
+          ' in the ' + activeBasin + ' basin. Select one to see its details.</p>';
+      } else {
+        if (fullCatchmentsBounds) map.fitBounds(fullCatchmentsBounds);
+        panel.innerHTML = '<p class="muted">Select a gauge station on the map to see its details here.</p>';
+      }
+    });
+
+    stationSelect.addEventListener('change', function () {
+      var gid = stationSelect.value;
+      if (!gid) {
+        activeGaugeId = '';
+        refreshStyles();
+        if (activeBasin) {
+          panel.innerHTML = '<p class="muted">' + (gaugeIdsByBasin[activeBasin] || []).length +
+            ' gauge station(s) in the ' + activeBasin + ' basin. Select one to see its details.</p>';
+        } else {
+          panel.innerHTML = '<p class="muted">Select a gauge station on the map to see its details here.</p>';
+        }
+        return;
+      }
+      selectGauge(gid, { skipSync: true });
+    });
   })();
 </script>
 <footer class="site-footer">
