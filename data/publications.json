@@ -1,29 +1,5 @@
 [
   {
-    "title": "Hydrological Uncertainty Across Snow- and Rainfall-Dominated Sub-Basins of a Partially Glacierized Himalayan Catchment",
-    "authors": "Mangukiya, N. K., Gupta, S., Mishra, R., Sharma, A., Sen, S., Agarwal, A., De Santis, D., Massari, C., & Barbetta, S.",
-    "venue": "Hydrological Processes",
-    "year": 2026,
-    "type": "Article",
-    "doi": "10.1002/hyp.70717",
-    "tags": [
-      "Modeling",
-      "Hydroclimatic Extremes"
-    ]
-  },
-  {
-    "title": "Fire Severity and Resistance–Resilience Trade-offs in Tropical Himalayan Forests: Insights from Recurring Fire Disturbances in Uttarakhand",
-    "authors": "Nagashree, G. E., & Sharma, A.",
-    "venue": "Environmental Research Communications",
-    "year": 2026,
-    "type": "Article",
-    "doi": "10.1088/2515-7620/aea26e",
-    "tags": [
-      "Ecohydrology",
-      "Climate Change"
-    ]
-  },
-  {
     "title": "Assessment of ecosystem functioning to droughts in India using a multi-dimensional resilience index",
     "authors": "Bejagam, V., Sharma, A., & Wei, X.",
     "venue": "Global and Planetary Change",
@@ -45,6 +21,30 @@
     "tags": [
       "Modeling",
       "Deep Learning"
+    ]
+  },
+  {
+    "title": "Hydrological Uncertainty Across Snow- and Rainfall-Dominated Sub-Basins of a Partially Glacierized Himalayan Catchment",
+    "authors": "Mangukiya, N. K., Gupta, S., Mishra, R., Sharma, A., Sen, S., Agarwal, A., De Santis, D., Massari, C., & Barbetta, S.",
+    "venue": "Hydrological Processes",
+    "year": 2026,
+    "type": "Article",
+    "doi": "10.1002/hyp.70717",
+    "tags": [
+      "Modeling",
+      "Hydroclimatic Extremes"
+    ]
+  },
+  {
+    "title": "Fire Severity and Resistance–Resilience Trade-offs in Tropical Himalayan Forests: Insights from Recurring Fire Disturbances in Uttarakhand",
+    "authors": "Nagashree, G. E., & Sharma, A.",
+    "venue": "Environmental Research Communications",
+    "year": 2026,
+    "type": "Article",
+    "doi": "10.1088/2515-7620/aea26e",
+    "tags": [
+      "Ecohydrology",
+      "Climate Change"
     ]
   },
   {
