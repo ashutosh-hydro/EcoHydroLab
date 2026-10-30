@@ -1,6 +1,5 @@
 [
   {
-<<<<<<< Updated upstream
     "title": "Hydrological Uncertainty Across Snow- and Rainfall-Dominated Sub-Basins of a Partially Glacierized Himalayan Catchment",
     "authors": "Mangukiya, N. K., Gupta, S., Mishra, R., Sharma, A., Sen, S., Agarwal, A., De Santis, D., Massari, C., & Barbetta, S.",
     "venue": "Hydrological Processes",
@@ -22,7 +21,9 @@
     "tags": [
       "Ecohydrology",
       "Climate Change"
-=======
+    ]
+  },
+  {
     "title": "Assessment of ecosystem functioning to droughts in India using a multi-dimensional resilience index",
     "authors": "Bejagam, V., Sharma, A., & Wei, X.",
     "venue": "Global and Planetary Change",
@@ -44,7 +45,6 @@
     "tags": [
       "Modeling",
       "Deep Learning"
->>>>>>> Stashed changes
     ]
   },
   {
